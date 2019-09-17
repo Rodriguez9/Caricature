@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0FC6D31F9B2011C411B84401FDF6CE1D"
+               BlueprintIdentifier = "A0A3D8BC83490D72C50E8BCE2C5D6FCD"
                BuildableName = "UINavigation_SXFixSpace.framework"
                BlueprintName = "UINavigation-SXFixSpace"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0FC6D31F9B2011C411B84401FDF6CE1D"
+            BlueprintIdentifier = "A0A3D8BC83490D72C50E8BCE2C5D6FCD"
             BuildableName = "UINavigation_SXFixSpace.framework"
             BlueprintName = "UINavigation-SXFixSpace"
             ReferencedContainer = "container:Pods.xcodeproj">

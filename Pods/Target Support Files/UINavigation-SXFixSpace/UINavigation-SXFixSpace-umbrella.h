@@ -10,11 +10,7 @@
 #endif
 #endif
 
-#import "NSObject+SXRuntime.h"
-#import "UINavigationBar+SXFixSpace.h"
-#import "UINavigationConfig.h"
-#import "UINavigationItem+SXFixSpace.h"
-#import "UIViewController+SXFixSpace.h"
+#import "UINavigationSXFixSpace.h"
 
 FOUNDATION_EXPORT double UINavigation_SXFixSpaceVersionNumber;
 FOUNDATION_EXPORT const unsigned char UINavigation_SXFixSpaceVersionString[];

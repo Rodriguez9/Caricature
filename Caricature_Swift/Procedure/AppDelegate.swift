@@ -28,8 +28,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
-//        window?.rootViewController =
+//        window?.rootViewController = UTabBarController()
         window?.makeKeyAndVisible()
+        //MARK: 修正齐刘海
+        //        UHairPowder.instance.spread()
         return true
     }
     
@@ -46,22 +48,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             defaults.synchronize()
         }
         
-        /*//MARK : 网络监控
-        *
-         *暂时不写
-         *
-         *
-         *
-         *
-         *
-         *
-         *
-         *
-         *
-
-         */
-        
+//暫時不寫
+//        //MARK: 网络监控
+//        reachability?.listener = { status in
+//            switch status {
+//            case .reachable(.wwan):
+//                UNoticeBar(config: UNoticeBarConfig(title: "主人,检测到您正在使用移动数据")).show(duration: 2)
+//            default: break
+//            }
+//        }
+//        reachability?.startListening()
     }
+    
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        return orientation
+    }
+    
 }
 
 

@@ -7,16 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030FA75723210276008DF4E7 /* UIBarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030FA75623210276008DF4E7 /* UIBarButtonItemExtension.swift */; };
+		0310AC1922FD772F00965ECD /* UTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0310AC1822FD772F00965ECD /* UTabBarController.swift */; };
+		031355262302C09D00E830DE /* UBaseTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031355252302C09D00E830DE /* UBaseTableViewHeaderFooterView.swift */; };
+		031A291E23192DA40085D3D7 /* UNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031A291D23192DA30085D3D7 /* UNavigationController.swift */; };
+		031C0248230AB1F7000656EC /* UBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C0247230AB1F7000656EC /* UBaseCollectionViewCell.swift */; };
+		031C024A230AB2A4000656EC /* UBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C0249230AB2A4000656EC /* UBaseTableViewCell.swift */; };
+		031C024C230AB4F0000656EC /* UBaseCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C024B230AB4EF000656EC /* UBaseCollectionReusableView.swift */; };
+		031DE493232262D30058AABD /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DE492232262D30058AABD /* StringExtension.swift */; };
+		031DE495232267960058AABD /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DE494232267960058AABD /* UIDeviceExtension.swift */; };
+		031DE497232274280058AABD /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DE496232274280058AABD /* UIImageExtensions.swift */; };
+		031DE4992322744A0058AABD /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DE4982322744A0058AABD /* ArrayExtensions.swift */; };
+		031DE49B2322748A0058AABD /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DE49A2322748A0058AABD /* DictionaryExtension.swift */; };
+		031DE49D232275980058AABD /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DE49C232275980058AABD /* DispatchQueueExtension.swift */; };
 		03406BAD22FC366B007DDF0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03406BAC22FC366B007DDF0E /* AppDelegate.swift */; };
 		03406BAF22FC366B007DDF0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03406BAE22FC366B007DDF0E /* ViewController.swift */; };
 		03406BB222FC366B007DDF0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03406BB022FC366B007DDF0E /* Main.storyboard */; };
 		03406BB422FC366B007DDF0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03406BB322FC366B007DDF0E /* Assets.xcassets */; };
 		03406BB722FC366B007DDF0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03406BB522FC366B007DDF0E /* LaunchScreen.storyboard */; };
 		03406BC022FC4700007DDF0E /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03406BBF22FC4700007DDF0E /* Global.swift */; };
+		0348346A232AA537003F7563 /* ConstraintArrayDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03483469232AA52F003F7563 /* ConstraintArrayDSL.swift */; };
+		039A25F7230BFCFB001AA408 /* UBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039A25F6230BFCFA001AA408 /* UBaseViewController.swift */; };
+		039A25FA230C003F001AA408 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039A25F9230C003F001AA408 /* UIColorExtension.swift */; };
+		039F0774232552C6006A13AB /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F0773232552C6006A13AB /* UIViewExtension.swift */; };
+		03EC4C20232FA02400D8B7B4 /* UWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EC4C1F232FA02400D8B7B4 /* UWebViewController.swift */; };
 		841349EBD9F1FFE8AF3DED01 /* Pods_Caricature_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4ECF4444F8B618D9AEB3672 /* Pods_Caricature_Swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		030FA75623210276008DF4E7 /* UIBarButtonItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemExtension.swift; sourceTree = "<group>"; };
+		0310AC1822FD772F00965ECD /* UTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTabBarController.swift; sourceTree = "<group>"; };
+		031355252302C09D00E830DE /* UBaseTableViewHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBaseTableViewHeaderFooterView.swift; sourceTree = "<group>"; };
+		031A291D23192DA30085D3D7 /* UNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNavigationController.swift; sourceTree = "<group>"; };
+		031C0247230AB1F7000656EC /* UBaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		031C0249230AB2A4000656EC /* UBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBaseTableViewCell.swift; sourceTree = "<group>"; };
+		031C024B230AB4EF000656EC /* UBaseCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBaseCollectionReusableView.swift; sourceTree = "<group>"; };
+		031DE492232262D30058AABD /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		031DE494232267960058AABD /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
+		031DE496232274280058AABD /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		031DE4982322744A0058AABD /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		031DE49A2322748A0058AABD /* DictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
+		031DE49C232275980058AABD /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
 		03406BA922FC366B007DDF0E /* Caricature_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caricature_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03406BAC22FC366B007DDF0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03406BAE22FC366B007DDF0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +56,11 @@
 		03406BB622FC366B007DDF0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03406BB822FC366B007DDF0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03406BBF22FC4700007DDF0E /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		03483469232AA52F003F7563 /* ConstraintArrayDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintArrayDSL.swift; sourceTree = "<group>"; };
+		039A25F6230BFCFA001AA408 /* UBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBaseViewController.swift; sourceTree = "<group>"; };
+		039A25F9230C003F001AA408 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		039F0773232552C6006A13AB /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		03EC4C1F232FA02400D8B7B4 /* UWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWebViewController.swift; sourceTree = "<group>"; };
 		5F7CD7CF795788B0CE6F1FF0 /* Pods-Caricature_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caricature_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Caricature_Swift/Pods-Caricature_Swift.release.xcconfig"; sourceTree = "<group>"; };
 		85CF236D36DAE7814D71F8A6 /* Pods-Caricature_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caricature_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Caricature_Swift/Pods-Caricature_Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		F4ECF4444F8B618D9AEB3672 /* Pods_Caricature_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Caricature_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +78,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		031355222302C04E00E830DE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				031355232302C06100E830DE /* View */,
+				031355242302C06700E830DE /* Controller */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		031355232302C06100E830DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				031355252302C09D00E830DE /* UBaseTableViewHeaderFooterView.swift */,
+				031C0247230AB1F7000656EC /* UBaseCollectionViewCell.swift */,
+				031C0249230AB2A4000656EC /* UBaseTableViewCell.swift */,
+				031C024B230AB4EF000656EC /* UBaseCollectionReusableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		031355242302C06700E830DE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				039A25F6230BFCFA001AA408 /* UBaseViewController.swift */,
+				031A291D23192DA30085D3D7 /* UNavigationController.swift */,
+				03EC4C1F232FA02400D8B7B4 /* UWebViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		03406BA022FC366B007DDF0E = {
 			isa = PBXGroup;
 			children = (
@@ -63,12 +129,15 @@
 		03406BAB22FC366B007DDF0E /* Caricature_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				03483469232AA52F003F7563 /* ConstraintArrayDSL.swift */,
+				03406BB822FC366B007DDF0E /* Info.plist */,
+				03406BB322FC366B007DDF0E /* Assets.xcassets */,
+				039A25F8230C0015001AA408 /* Extension */,
 				03406BBE22FC46DE007DDF0E /* Procedure */,
 				03406BAE22FC366B007DDF0E /* ViewController.swift */,
 				03406BB022FC366B007DDF0E /* Main.storyboard */,
-				03406BB322FC366B007DDF0E /* Assets.xcassets */,
 				03406BB522FC366B007DDF0E /* LaunchScreen.storyboard */,
-				03406BB822FC366B007DDF0E /* Info.plist */,
+				0310AC1822FD772F00965ECD /* UTabBarController.swift */,
 			);
 			path = Caricature_Swift;
 			sourceTree = "<group>";
@@ -78,8 +147,25 @@
 			children = (
 				03406BAC22FC366B007DDF0E /* AppDelegate.swift */,
 				03406BBF22FC4700007DDF0E /* Global.swift */,
+				031355222302C04E00E830DE /* Base */,
 			);
 			path = Procedure;
+			sourceTree = "<group>";
+		};
+		039A25F8230C0015001AA408 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				031DE4982322744A0058AABD /* ArrayExtensions.swift */,
+				039A25F9230C003F001AA408 /* UIColorExtension.swift */,
+				039F0773232552C6006A13AB /* UIViewExtension.swift */,
+				030FA75623210276008DF4E7 /* UIBarButtonItemExtension.swift */,
+				031DE494232267960058AABD /* UIDeviceExtension.swift */,
+				031DE496232274280058AABD /* UIImageExtensions.swift */,
+				031DE49C232275980058AABD /* DispatchQueueExtension.swift */,
+				031DE492232262D30058AABD /* StringExtension.swift */,
+				031DE49A2322748A0058AABD /* DictionaryExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		6305C63761C3DCC012B12794 /* Frameworks */ = {
@@ -110,7 +196,7 @@
 				03406BA522FC366B007DDF0E /* Sources */,
 				03406BA622FC366B007DDF0E /* Frameworks */,
 				03406BA722FC366B007DDF0E /* Resources */,
-				09A170C7318E5BF7B59F6922 /* [CP] Embed Pods Frameworks */,
+				2EBBA055B81BD848E744CCEB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,7 +254,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		09A170C7318E5BF7B59F6922 /* [CP] Embed Pods Frameworks */ = {
+		2EBBA055B81BD848E744CCEB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -176,13 +262,35 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Caricature_Swift/Pods-Caricature_Swift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/EmptyDataSet-Swift/EmptyDataSet_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/HMSegmentedControl/HMSegmentedControl.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/LLCycleScrollView/LLCycleScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 				"${BUILT_PRODUCTS_DIR}/UINavigation-SXFixSpace/UINavigation_SXFixSpace.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EmptyDataSet_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HMSegmentedControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LLCycleScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UINavigation_SXFixSpace.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,8 +324,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				03406BAF22FC366B007DDF0E /* ViewController.swift in Sources */,
+				031C0248230AB1F7000656EC /* UBaseCollectionViewCell.swift in Sources */,
+				031C024C230AB4F0000656EC /* UBaseCollectionReusableView.swift in Sources */,
 				03406BAD22FC366B007DDF0E /* AppDelegate.swift in Sources */,
+				039A25F7230BFCFB001AA408 /* UBaseViewController.swift in Sources */,
+				031355262302C09D00E830DE /* UBaseTableViewHeaderFooterView.swift in Sources */,
 				03406BC022FC4700007DDF0E /* Global.swift in Sources */,
+				039A25FA230C003F001AA408 /* UIColorExtension.swift in Sources */,
+				030FA75723210276008DF4E7 /* UIBarButtonItemExtension.swift in Sources */,
+				031DE49B2322748A0058AABD /* DictionaryExtension.swift in Sources */,
+				0310AC1922FD772F00965ECD /* UTabBarController.swift in Sources */,
+				03EC4C20232FA02400D8B7B4 /* UWebViewController.swift in Sources */,
+				031C024A230AB2A4000656EC /* UBaseTableViewCell.swift in Sources */,
+				031DE495232267960058AABD /* UIDeviceExtension.swift in Sources */,
+				039F0774232552C6006A13AB /* UIViewExtension.swift in Sources */,
+				0348346A232AA537003F7563 /* ConstraintArrayDSL.swift in Sources */,
+				031DE497232274280058AABD /* UIImageExtensions.swift in Sources */,
+				031DE493232262D30058AABD /* StringExtension.swift in Sources */,
+				031A291E23192DA40085D3D7 /* UNavigationController.swift in Sources */,
+				031DE4992322744A0058AABD /* ArrayExtensions.swift in Sources */,
+				031DE49D232275980058AABD /* DispatchQueueExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,17 +490,21 @@
 			baseConfigurationReference = 85CF236D36DAE7814D71F8A6 /* Pods-Caricature_Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = P9BU883P24;
 				INFOPLIST_FILE = Caricature_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tfbj.xudb.Caricature-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tfbj.xudb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = tonguingDevelopment;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Pods/Kingfisher\"";
 			};
 			name = Debug;
 		};
@@ -383,17 +513,21 @@
 			baseConfigurationReference = 5F7CD7CF795788B0CE6F1FF0 /* Pods-Caricature_Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Caricature_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tfbj.xudb.Caricature-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tfbj.xudb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Pods/Kingfisher\"";
 			};
 			name = Release;
 		};
