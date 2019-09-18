@@ -52,10 +52,11 @@ class UBaseViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
 }
-    extension UBaseViewController{
-        override var preferredStatusBarStyle: UIStatusBarStyle{
-            return .lightContent
-        }
+
+extension UBaseViewController{
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent
     }
+}
     
 

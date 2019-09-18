@@ -9,6 +9,7 @@
 import UIKit
 import Reusable
 import SnapKit
+
 class UBaseTableViewHeaderFooterView: UITableViewHeaderFooterView,Reusable{
 
     required init?(coder aDecoder: NSCoder) {

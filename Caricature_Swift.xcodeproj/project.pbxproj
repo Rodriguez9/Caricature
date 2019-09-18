@@ -10,6 +10,7 @@
 		030FA75723210276008DF4E7 /* UIBarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030FA75623210276008DF4E7 /* UIBarButtonItemExtension.swift */; };
 		0310AC1922FD772F00965ECD /* UTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0310AC1822FD772F00965ECD /* UTabBarController.swift */; };
 		031355262302C09D00E830DE /* UBaseTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031355252302C09D00E830DE /* UBaseTableViewHeaderFooterView.swift */; };
+		03155E4A233279720012B606 /* UPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155E49233279720012B606 /* UPageViewController.swift */; };
 		031A291E23192DA40085D3D7 /* UNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031A291D23192DA30085D3D7 /* UNavigationController.swift */; };
 		031C0248230AB1F7000656EC /* UBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C0247230AB1F7000656EC /* UBaseCollectionViewCell.swift */; };
 		031C024A230AB2A4000656EC /* UBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C0249230AB2A4000656EC /* UBaseTableViewCell.swift */; };
@@ -38,6 +39,7 @@
 		030FA75623210276008DF4E7 /* UIBarButtonItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemExtension.swift; sourceTree = "<group>"; };
 		0310AC1822FD772F00965ECD /* UTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTabBarController.swift; sourceTree = "<group>"; };
 		031355252302C09D00E830DE /* UBaseTableViewHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBaseTableViewHeaderFooterView.swift; sourceTree = "<group>"; };
+		03155E49233279720012B606 /* UPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPageViewController.swift; sourceTree = "<group>"; };
 		031A291D23192DA30085D3D7 /* UNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNavigationController.swift; sourceTree = "<group>"; };
 		031C0247230AB1F7000656EC /* UBaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		031C0249230AB2A4000656EC /* UBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBaseTableViewCell.swift; sourceTree = "<group>"; };
@@ -101,6 +103,8 @@
 		031355242302C06700E830DE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				03155E49233279720012B606 /* UPageViewController.swift */,
+				0310AC1822FD772F00965ECD /* UTabBarController.swift */,
 				039A25F6230BFCFA001AA408 /* UBaseViewController.swift */,
 				031A291D23192DA30085D3D7 /* UNavigationController.swift */,
 				03EC4C1F232FA02400D8B7B4 /* UWebViewController.swift */,
@@ -137,7 +141,6 @@
 				03406BAE22FC366B007DDF0E /* ViewController.swift */,
 				03406BB022FC366B007DDF0E /* Main.storyboard */,
 				03406BB522FC366B007DDF0E /* LaunchScreen.storyboard */,
-				0310AC1822FD772F00965ECD /* UTabBarController.swift */,
 			);
 			path = Caricature_Swift;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				031A291E23192DA40085D3D7 /* UNavigationController.swift in Sources */,
 				031DE4992322744A0058AABD /* ArrayExtensions.swift in Sources */,
 				031DE49D232275980058AABD /* DispatchQueueExtension.swift in Sources */,
+				03155E4A233279720012B606 /* UPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

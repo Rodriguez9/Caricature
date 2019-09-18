@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
-//        window?.rootViewController = UTabBarController()
+        window?.rootViewController = UWebViewController(url: "http://www.u17.com/z/zt/appspecial/special_comic_list_v3.html")
         window?.makeKeyAndVisible()
         //MARK: 修正齐刘海
         //        UHairPowder.instance.spread()
