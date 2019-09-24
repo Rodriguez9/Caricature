@@ -21,6 +21,7 @@
 		031DE4992322744A0058AABD /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DE4982322744A0058AABD /* ArrayExtensions.swift */; };
 		031DE49B2322748A0058AABD /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DE49A2322748A0058AABD /* DictionaryExtension.swift */; };
 		031DE49D232275980058AABD /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DE49C232275980058AABD /* DispatchQueueExtension.swift */; };
+		032165B6233A76FA005F015A /* UHairPowder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032165B5233A76FA005F015A /* UHairPowder.swift */; };
 		03406BAD22FC366B007DDF0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03406BAC22FC366B007DDF0E /* AppDelegate.swift */; };
 		03406BAF22FC366B007DDF0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03406BAE22FC366B007DDF0E /* ViewController.swift */; };
 		03406BB222FC366B007DDF0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03406BB022FC366B007DDF0E /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 		031DE4982322744A0058AABD /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		031DE49A2322748A0058AABD /* DictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
 		031DE49C232275980058AABD /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
+		032165B5233A76FA005F015A /* UHairPowder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UHairPowder.swift; sourceTree = "<group>"; };
 		03406BA922FC366B007DDF0E /* Caricature_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caricature_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03406BAC22FC366B007DDF0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03406BAE22FC366B007DDF0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,12 +106,28 @@
 			isa = PBXGroup;
 			children = (
 				03155E49233279720012B606 /* UPageViewController.swift */,
-				0310AC1822FD772F00965ECD /* UTabBarController.swift */,
 				039A25F6230BFCFA001AA408 /* UBaseViewController.swift */,
+				0310AC1822FD772F00965ECD /* UTabBarController.swift */,
 				031A291D23192DA30085D3D7 /* UNavigationController.swift */,
 				03EC4C1F232FA02400D8B7B4 /* UWebViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		032165B3233A76B9005F015A /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				032165B4233A76D5005F015A /* HairPowder */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		032165B4233A76D5005F015A /* HairPowder */ = {
+			isa = PBXGroup;
+			children = (
+				032165B5233A76FA005F015A /* UHairPowder.swift */,
+			);
+			path = HairPowder;
 			sourceTree = "<group>";
 		};
 		03406BA022FC366B007DDF0E = {
@@ -133,6 +151,7 @@
 		03406BAB22FC366B007DDF0E /* Caricature_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				032165B3233A76B9005F015A /* Component */,
 				03483469232AA52F003F7563 /* ConstraintArrayDSL.swift */,
 				03406BB822FC366B007DDF0E /* Info.plist */,
 				03406BB322FC366B007DDF0E /* Assets.xcassets */,
@@ -327,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03406BAF22FC366B007DDF0E /* ViewController.swift in Sources */,
+				032165B6233A76FA005F015A /* UHairPowder.swift in Sources */,
 				031C0248230AB1F7000656EC /* UBaseCollectionViewCell.swift in Sources */,
 				031C024C230AB4F0000656EC /* UBaseCollectionReusableView.swift in Sources */,
 				03406BAD22FC366B007DDF0E /* AppDelegate.swift in Sources */,

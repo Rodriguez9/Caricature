@@ -19,12 +19,19 @@ class UPageViewController: UBaseViewController {
     
     var pageStyle: UPageStyle!
     
+    //HMSegmentedControl：分栏控制器
+    //then:来源于第三方框架Then，改进写法
     lazy var segment: HMSegmentedControl = {
         return HMSegmentedControl().then{
             $0.addTarget(self, action: #selector(changeIndex(segment:)),for: .valueChanged)
         }
     }()
     
+    //UIPageViewController是一个用来管理内容页之间导航的容器控制器(container view controller)，其中每个子页面由子视图控制器管理。内容页间导航可以由用户手势触发，也可以由代码控制。
+    //UIPageViewController可以实现图片轮播效果和翻书效果.
+    //transitionStyle ： 翻页的过渡样式
+    //navigationOrientation ： 导航方向
+    //options： 这个参数是可选的,传入的是对UIPageViewController的一些配置
     lazy var pageVC: UIPageViewController = {
         return UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
     }()
@@ -53,8 +60,8 @@ class UPageViewController: UBaseViewController {
                 self?.currentSelectIndex = index
             }
         }
-        
     }
+    
     override func configUI() {
         guard let vcs = vcs else{return}
         addChild(pageVC)
