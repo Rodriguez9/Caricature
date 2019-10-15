@@ -22,6 +22,10 @@
 		031DE49B2322748A0058AABD /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DE49A2322748A0058AABD /* DictionaryExtension.swift */; };
 		031DE49D232275980058AABD /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DE49C232275980058AABD /* DispatchQueueExtension.swift */; };
 		032165B6233A76FA005F015A /* UHairPowder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032165B5233A76FA005F015A /* UHairPowder.swift */; };
+		032E19FD23482D5E006F5573 /* UIScrollView+ParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E19FC23482D5E006F5573 /* UIScrollView+ParallaxHeader.swift */; };
+		032E19FF23482EA7006F5573 /* ParallaxHeaderMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E19FE23482EA7006F5573 /* ParallaxHeaderMode.swift */; };
+		032E1A0123482F10006F5573 /* ParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E1A0023482F10006F5573 /* ParallaxHeader.swift */; };
+		033CD3A62345EA46006B52D0 /* URefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033CD3A52345EA46006B52D0 /* URefresh.swift */; };
 		03406BAD22FC366B007DDF0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03406BAC22FC366B007DDF0E /* AppDelegate.swift */; };
 		03406BAF22FC366B007DDF0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03406BAE22FC366B007DDF0E /* ViewController.swift */; };
 		03406BB222FC366B007DDF0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03406BB022FC366B007DDF0E /* Main.storyboard */; };
@@ -29,6 +33,10 @@
 		03406BB722FC366B007DDF0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03406BB522FC366B007DDF0E /* LaunchScreen.storyboard */; };
 		03406BC022FC4700007DDF0E /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03406BBF22FC4700007DDF0E /* Global.swift */; };
 		0348346A232AA537003F7563 /* ConstraintArrayDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03483469232AA52F003F7563 /* ConstraintArrayDSL.swift */; };
+		0349947C23487A33004F3395 /* UNoticeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0349947B23487A33004F3395 /* UNoticeBar.swift */; };
+		0350F7BF2344FFDC00126CCD /* UEmptyDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0350F7BE2344FFDC00126CCD /* UEmptyDataSet.swift */; };
+		0354E4B82351C33B0081F966 /* UCollectionViewAlignedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0354E4B72351C33B0081F966 /* UCollectionViewAlignedLayout.swift */; };
+		0354E4BA235369990081F966 /* UCollectionViewSectionBackgroundLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0354E4B9235369990081F966 /* UCollectionViewSectionBackgroundLayout.swift */; };
 		039A25F7230BFCFB001AA408 /* UBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039A25F6230BFCFA001AA408 /* UBaseViewController.swift */; };
 		039A25FA230C003F001AA408 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039A25F9230C003F001AA408 /* UIColorExtension.swift */; };
 		039F0774232552C6006A13AB /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F0773232552C6006A13AB /* UIViewExtension.swift */; };
@@ -52,6 +60,10 @@
 		031DE49A2322748A0058AABD /* DictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
 		031DE49C232275980058AABD /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
 		032165B5233A76FA005F015A /* UHairPowder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UHairPowder.swift; sourceTree = "<group>"; };
+		032E19FC23482D5E006F5573 /* UIScrollView+ParallaxHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ParallaxHeader.swift"; sourceTree = "<group>"; };
+		032E19FE23482EA7006F5573 /* ParallaxHeaderMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxHeaderMode.swift; sourceTree = "<group>"; };
+		032E1A0023482F10006F5573 /* ParallaxHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxHeader.swift; sourceTree = "<group>"; };
+		033CD3A52345EA46006B52D0 /* URefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URefresh.swift; sourceTree = "<group>"; };
 		03406BA922FC366B007DDF0E /* Caricature_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caricature_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03406BAC22FC366B007DDF0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03406BAE22FC366B007DDF0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +73,10 @@
 		03406BB822FC366B007DDF0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03406BBF22FC4700007DDF0E /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		03483469232AA52F003F7563 /* ConstraintArrayDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintArrayDSL.swift; sourceTree = "<group>"; };
+		0349947B23487A33004F3395 /* UNoticeBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNoticeBar.swift; sourceTree = "<group>"; };
+		0350F7BE2344FFDC00126CCD /* UEmptyDataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEmptyDataSet.swift; sourceTree = "<group>"; };
+		0354E4B72351C33B0081F966 /* UCollectionViewAlignedLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCollectionViewAlignedLayout.swift; sourceTree = "<group>"; };
+		0354E4B9235369990081F966 /* UCollectionViewSectionBackgroundLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCollectionViewSectionBackgroundLayout.swift; sourceTree = "<group>"; };
 		039A25F6230BFCFA001AA408 /* UBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBaseViewController.swift; sourceTree = "<group>"; };
 		039A25F9230C003F001AA408 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		039F0773232552C6006A13AB /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -118,6 +134,11 @@
 			isa = PBXGroup;
 			children = (
 				032165B4233A76D5005F015A /* HairPowder */,
+				0354E4B62351C3250081F966 /* CollectionViewLayout */,
+				033CD3A42345EA37006B52D0 /* Refresh */,
+				0350F7BD2344FFCF00126CCD /* UEmptyDataSet */,
+				032E19FB23482D43006F5573 /* ParallaxHeader(不懂) */,
+				0349947A23487A24004F3395 /* NoticeBar */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -128,6 +149,24 @@
 				032165B5233A76FA005F015A /* UHairPowder.swift */,
 			);
 			path = HairPowder;
+			sourceTree = "<group>";
+		};
+		032E19FB23482D43006F5573 /* ParallaxHeader(不懂) */ = {
+			isa = PBXGroup;
+			children = (
+				032E19FC23482D5E006F5573 /* UIScrollView+ParallaxHeader.swift */,
+				032E19FE23482EA7006F5573 /* ParallaxHeaderMode.swift */,
+				032E1A0023482F10006F5573 /* ParallaxHeader.swift */,
+			);
+			path = "ParallaxHeader(不懂)";
+			sourceTree = "<group>";
+		};
+		033CD3A42345EA37006B52D0 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				033CD3A52345EA46006B52D0 /* URefresh.swift */,
+			);
+			path = Refresh;
 			sourceTree = "<group>";
 		};
 		03406BA022FC366B007DDF0E = {
@@ -172,6 +211,31 @@
 				031355222302C04E00E830DE /* Base */,
 			);
 			path = Procedure;
+			sourceTree = "<group>";
+		};
+		0349947A23487A24004F3395 /* NoticeBar */ = {
+			isa = PBXGroup;
+			children = (
+				0349947B23487A33004F3395 /* UNoticeBar.swift */,
+			);
+			path = NoticeBar;
+			sourceTree = "<group>";
+		};
+		0350F7BD2344FFCF00126CCD /* UEmptyDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				0350F7BE2344FFDC00126CCD /* UEmptyDataSet.swift */,
+			);
+			path = UEmptyDataSet;
+			sourceTree = "<group>";
+		};
+		0354E4B62351C3250081F966 /* CollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				0354E4B72351C33B0081F966 /* UCollectionViewAlignedLayout.swift */,
+				0354E4B9235369990081F966 /* UCollectionViewSectionBackgroundLayout.swift */,
+			);
+			path = CollectionViewLayout;
 			sourceTree = "<group>";
 		};
 		039A25F8230C0015001AA408 /* Extension */ = {
@@ -345,7 +409,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0354E4BA235369990081F966 /* UCollectionViewSectionBackgroundLayout.swift in Sources */,
 				03406BAF22FC366B007DDF0E /* ViewController.swift in Sources */,
+				032E1A0123482F10006F5573 /* ParallaxHeader.swift in Sources */,
+				032E19FD23482D5E006F5573 /* UIScrollView+ParallaxHeader.swift in Sources */,
+				0354E4B82351C33B0081F966 /* UCollectionViewAlignedLayout.swift in Sources */,
 				032165B6233A76FA005F015A /* UHairPowder.swift in Sources */,
 				031C0248230AB1F7000656EC /* UBaseCollectionViewCell.swift in Sources */,
 				031C024C230AB4F0000656EC /* UBaseCollectionReusableView.swift in Sources */,
@@ -358,15 +426,19 @@
 				031DE49B2322748A0058AABD /* DictionaryExtension.swift in Sources */,
 				0310AC1922FD772F00965ECD /* UTabBarController.swift in Sources */,
 				03EC4C20232FA02400D8B7B4 /* UWebViewController.swift in Sources */,
+				032E19FF23482EA7006F5573 /* ParallaxHeaderMode.swift in Sources */,
 				031C024A230AB2A4000656EC /* UBaseTableViewCell.swift in Sources */,
 				031DE495232267960058AABD /* UIDeviceExtension.swift in Sources */,
 				039F0774232552C6006A13AB /* UIViewExtension.swift in Sources */,
+				0350F7BF2344FFDC00126CCD /* UEmptyDataSet.swift in Sources */,
 				0348346A232AA537003F7563 /* ConstraintArrayDSL.swift in Sources */,
 				031DE497232274280058AABD /* UIImageExtensions.swift in Sources */,
 				031DE493232262D30058AABD /* StringExtension.swift in Sources */,
+				0349947C23487A33004F3395 /* UNoticeBar.swift in Sources */,
 				031A291E23192DA40085D3D7 /* UNavigationController.swift in Sources */,
 				031DE4992322744A0058AABD /* ArrayExtensions.swift in Sources */,
 				031DE49D232275980058AABD /* DispatchQueueExtension.swift in Sources */,
+				033CD3A62345EA46006B52D0 /* URefresh.swift in Sources */,
 				03155E4A233279720012B606 /* UPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,7 +588,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = P9BU883P24;
+				DEVELOPMENT_TEAM = FGHZSW47KN;
 				INFOPLIST_FILE = Caricature_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -525,7 +597,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tfbj.xudb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = tonguingDevelopment;
+				PROVISIONING_PROFILE_SPECIFIER = cesi;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Pods/Kingfisher\"";
