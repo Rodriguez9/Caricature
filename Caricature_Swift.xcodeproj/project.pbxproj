@@ -10,6 +10,8 @@
 		030FA75723210276008DF4E7 /* UIBarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030FA75623210276008DF4E7 /* UIBarButtonItemExtension.swift */; };
 		0310AC1922FD772F00965ECD /* UTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0310AC1822FD772F00965ECD /* UTabBarController.swift */; };
 		031355262302C09D00E830DE /* UBaseTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031355252302C09D00E830DE /* UBaseTableViewHeaderFooterView.swift */; };
+		0314A97C2357630D00B1CF2D /* UModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0314A97B2357630D00B1CF2D /* UModel.swift */; };
+		0314A97F23576A3200B1CF2D /* UAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0314A97E23576A3200B1CF2D /* UAPI.swift */; };
 		03155E4A233279720012B606 /* UPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155E49233279720012B606 /* UPageViewController.swift */; };
 		031A291E23192DA40085D3D7 /* UNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031A291D23192DA30085D3D7 /* UNavigationController.swift */; };
 		031C0248230AB1F7000656EC /* UBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031C0247230AB1F7000656EC /* UBaseCollectionViewCell.swift */; };
@@ -48,6 +50,8 @@
 		030FA75623210276008DF4E7 /* UIBarButtonItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemExtension.swift; sourceTree = "<group>"; };
 		0310AC1822FD772F00965ECD /* UTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTabBarController.swift; sourceTree = "<group>"; };
 		031355252302C09D00E830DE /* UBaseTableViewHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBaseTableViewHeaderFooterView.swift; sourceTree = "<group>"; };
+		0314A97B2357630D00B1CF2D /* UModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UModel.swift; sourceTree = "<group>"; };
+		0314A97E23576A3200B1CF2D /* UAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UAPI.swift; sourceTree = "<group>"; };
 		03155E49233279720012B606 /* UPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPageViewController.swift; sourceTree = "<group>"; };
 		031A291D23192DA30085D3D7 /* UNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNavigationController.swift; sourceTree = "<group>"; };
 		031C0247230AB1F7000656EC /* UBaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBaseCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -130,6 +134,22 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		0314A97A235762EA00B1CF2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0314A97B2357630D00B1CF2D /* UModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0314A97D23576A2200B1CF2D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0314A97E23576A3200B1CF2D /* UAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		032165B3233A76B9005F015A /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,11 +210,13 @@
 		03406BAB22FC366B007DDF0E /* Caricature_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				0314A97D23576A2200B1CF2D /* API */,
 				032165B3233A76B9005F015A /* Component */,
 				03483469232AA52F003F7563 /* ConstraintArrayDSL.swift */,
 				03406BB822FC366B007DDF0E /* Info.plist */,
 				03406BB322FC366B007DDF0E /* Assets.xcassets */,
 				039A25F8230C0015001AA408 /* Extension */,
+				0314A97A235762EA00B1CF2D /* Model */,
 				03406BBE22FC46DE007DDF0E /* Procedure */,
 				03406BAE22FC366B007DDF0E /* ViewController.swift */,
 				03406BB022FC366B007DDF0E /* Main.storyboard */,
@@ -415,6 +437,7 @@
 				032E19FD23482D5E006F5573 /* UIScrollView+ParallaxHeader.swift in Sources */,
 				0354E4B82351C33B0081F966 /* UCollectionViewAlignedLayout.swift in Sources */,
 				032165B6233A76FA005F015A /* UHairPowder.swift in Sources */,
+				0314A97F23576A3200B1CF2D /* UAPI.swift in Sources */,
 				031C0248230AB1F7000656EC /* UBaseCollectionViewCell.swift in Sources */,
 				031C024C230AB4F0000656EC /* UBaseCollectionReusableView.swift in Sources */,
 				03406BAD22FC366B007DDF0E /* AppDelegate.swift in Sources */,
@@ -422,6 +445,7 @@
 				031355262302C09D00E830DE /* UBaseTableViewHeaderFooterView.swift in Sources */,
 				03406BC022FC4700007DDF0E /* Global.swift in Sources */,
 				039A25FA230C003F001AA408 /* UIColorExtension.swift in Sources */,
+				0314A97C2357630D00B1CF2D /* UModel.swift in Sources */,
 				030FA75723210276008DF4E7 /* UIBarButtonItemExtension.swift in Sources */,
 				031DE49B2322748A0058AABD /* DictionaryExtension.swift in Sources */,
 				0310AC1922FD772F00965ECD /* UTabBarController.swift in Sources */,
