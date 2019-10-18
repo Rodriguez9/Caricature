@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
-        window?.rootViewController = UWebViewController(url: "http://www.u17.com/z/zt/appspecial/special_comic_list_v3.html")
+        window?.rootViewController = UMineViewController()
         window?.makeKeyAndVisible()
         //MARK: 修正齐刘海
         UHairPowder.instance.spread()
@@ -48,16 +48,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             defaults.synchronize()
         }
         
-//暫時不寫
-//        //MARK: 网络监控
-//        reachability?.listener = { status in
-//            switch status {
-//            case .reachable(.wwan):
-//                UNoticeBar(config: UNoticeBarConfig(title: "主人,检测到您正在使用移动数据")).show(duration: 2)
-//            default: break
-//            }
-//        }
-//        reachability?.startListening()
+        //MARK: 网络监控
+        reachability?.listener = { status in
+            switch status {
+            case .reachable(.wwan):
+                UNoticeBar(config: UNoticeBarConfig(title: "主人,检测到您正在使用移动数据")).show(duration: 2)
+            default: break
+            }
+        }
+        reachability?.startListening()
     }
     
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {

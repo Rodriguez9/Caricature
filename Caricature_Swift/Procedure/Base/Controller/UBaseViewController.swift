@@ -36,6 +36,7 @@ class UBaseViewController: UIViewController {
     
     func configNavigationBar(){
         guard let navi = navigationController else {return}
+        //visibleViewController:当前可见的视图可以属于导航堆栈顶部的视图控制器
         if navi.visibleViewController == self {
             navi.barStyle(.theme)
             navi.disablePopGesture = false

@@ -24,7 +24,7 @@ extension UIScrollView{
      */
     public var parallaxHeader: ParallaxHeader{
         get{
-            if let header = objc_getAssociatedObject(self, &AssociatedKeys.descriptiveName) as? ParallaxHeader{
+            if let header = objc_getAssociatedObject(self,&AssociatedKeys.descriptiveName) as? ParallaxHeader{
                 return header
             }
             let header = ParallaxHeader()
@@ -32,7 +32,10 @@ extension UIScrollView{
             return header
         }
         set(parallaxHeader){
-            objc_setAssociatedObject(self, AssociatedKeys.descriptiveName, parallaxHeader, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            parallaxHeader.scrollView = self
+            objc_setAssociatedObject(self,&AssociatedKeys.descriptiveName,parallaxHeader,
+                .OBJC_ASSOCIATION_RETAIN_NONATOMIC
+            )
         }
     }
 }
