@@ -60,17 +60,17 @@ public class UCollectionViewAlignedLayout: UICollectionViewFlowLayout {
         }
         
         switch verticalAlignment {
-        case .top:
-            let minY = layoutAttributes.reduce(CGFloat.greatestFiniteMagnitude){
-                min($0, $1.frame.minY)
-            }
-            return AlignmentAxis(alignment: .top, postition: minY)
-        case .bottom:
-            let maxY = layoutAttributes.reduce(0){max($0, $1.frame.maxY)}
-            return AlignmentAxis(alignment: .bottom, postition: maxY)
-        default:
-            let centerY = firstAttributes.center.y
-            return AlignmentAxis(alignment: .center, postition: centerY)
+            case .top:
+                let minY = layoutAttributes.reduce(CGFloat.greatestFiniteMagnitude){
+                    min($0, $1.frame.minY)
+                }
+                return AlignmentAxis(alignment: .top, postition: minY)
+            case .bottom:
+                let maxY = layoutAttributes.reduce(0){max($0, $1.frame.maxY)}
+                return AlignmentAxis(alignment: .bottom, postition: maxY)
+            default:
+                let centerY = firstAttributes.center.y
+                return AlignmentAxis(alignment: .center, postition: centerY)
         }
     }
     
@@ -187,7 +187,7 @@ fileprivate extension UICollectionViewLayoutAttributes {
     }
     
     func isRepresentingFirstItemInLine(collectionViewLayout: UCollectionViewAlignedLayout) -> Bool {
-        if currentSection <= 0 {
+        if currentItem <= 0 {
             return true
         }
         else {
@@ -267,10 +267,10 @@ fileprivate extension UICollectionViewLayoutAttributes {
             if isRepresentingFirstItemInLine(collectionViewLayout: collectionViewLayout){
                 align(toAlignmentAxis: alignementAxis)
             }else{
-                alignToFollowingItem(collectionViewLayout: collectionViewLayout)
+                alignToPrecedingItem(collectionViewLayout: collectionViewLayout)
             }
         case .right:
-            if isRepresentingFirstItemInLine(collectionViewLayout: collectionViewLayout){
+            if isRepresentingLastItemInLine(collectionViewLayout: collectionViewLayout){
                 align(toAlignmentAxis: alignementAxis)
             }else{
                 alignToFollowingItem(collectionViewLayout: collectionViewLayout)

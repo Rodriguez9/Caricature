@@ -51,6 +51,7 @@ enum UApi{
     case chapter(chapter_id: Int)//章节内容
 }
 
+//判斷是否連通
 //Endpoint：用于将“目标”枚举的目标确定为具体端点的类
 //RequestResultClosure：决定是否执行以及应执行什么请求的闭包。
 let timeoutClosure = {(endpoint: Endpoint, closure: MoyaProvider<UApi>.RequestResultClosure)
@@ -61,8 +62,10 @@ let timeoutClosure = {(endpoint: Endpoint, closure: MoyaProvider<UApi>.RequestRe
     }else{
         closure(.failure(MoyaError.requestMapping(endpoint.url)))
     }
-    
 }
+
+let ApiProvider = MoyaProvider<UApi>(requestClosure: timeoutClosure)
+let ApiLoadingProvider = MoyaProvider<UApi>(requestClosure: timeoutClosure,plugins:[LoadingPlugin])
 
 extension UApi: TargetType{
     var sampleData: Data {
@@ -158,7 +161,7 @@ extension MoyaProvider{
                                     model: T.Type,
                                     completion:((_ ReturnData: T?) -> Void)?)->
                                         Cancellable?{
-                                            
+
         return request(target, completion: { (result) in
             guard let completion = completion else{return}
             guard let returnData = try? result.value?.mapModel(ResponseData<T>.self) else{

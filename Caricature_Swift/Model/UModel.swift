@@ -1,9 +1,9 @@
 //
 //  UModel.swift
-//  Caricature_Swift
+//  U17
 //
-//  Created by 姚智豪 on 2019/10/16.
-//  Copyright © 2019 姚智豪. All rights reserved.
+//  Created by charles on 2017/10/24.
+//  Copyright © 2017年 None. All rights reserved.
 //
 
 import HandyJSON
@@ -20,7 +20,6 @@ struct ImageModel: HandyJSON {
     var img50: String?
 }
 
-//章节模型
 struct ChapterModel: HandyJSON {
     var status: Int = 0
     var chapter_id: Int = 0
@@ -28,22 +27,18 @@ struct ChapterModel: HandyJSON {
     var image_list: [ImageModel]?
 }
 
-//作者模型
 struct AuthorModel: HandyJSON {
     var id: Int = 0
-    //头像
     var avatar: String?
     var name: String?
 }
 
-//分类标签模型
 struct ClassifyTagModel: HandyJSON {
     var name: String?
     var argName: String?
     var argVal: Int = 0
 }
 
-//漫画静态模型
 struct ComicStaticModel: HandyJSON {
     var name: String?
     var comic_id: Int = 0
@@ -74,7 +69,6 @@ struct ImHightModel: HandyJSON {
     var width: Int = 0
 }
 
-//静态章节模型
 struct ChapterStaticModel: HandyJSON {
     var chapter_id: Int = 0
     var name: String?
@@ -98,14 +92,12 @@ struct OtherWorkModel: HandyJSON {
     var passChapterNum: Int = 0
 }
 
-//静态详情
 struct DetailStaticModel: HandyJSON {
     var comic: ComicStaticModel?
     var chapter_list: [ChapterStaticModel]?
     var otherWorks: [OtherWorkModel]?
 }
 
-//漫画实时
 struct ComicRealtimeModel: HandyJSON {
     var comic_id: Int = 0
     var user_id: Int = 0
@@ -124,7 +116,6 @@ struct ComicRealtimeModel: HandyJSON {
     var is_auto_buy: Bool = false
 }
 
-//实时章节
 struct ChapterRealtimeModel: HandyJSON {
     var vip_images: Int = 0
     var is_view: Bool = false
@@ -135,13 +126,11 @@ struct ChapterRealtimeModel: HandyJSON {
     var is_free: Bool = false
 }
 
-//实时详情
 struct DetailRealtimeModel: HandyJSON {
     var comic: ComicRealtimeModel?
     var chapter_list: [ChapterRealtimeModel]?
 }
 
-//猜你喜欢
 struct GuessLikeModel: HandyJSON {
     var normal: Bool = false
     var last_modified: Int = 0
@@ -159,7 +148,6 @@ struct LevelModel: HandyJSON {
     var wage: Int = 0
 }
 
-//评论模型
 struct CommentModel: HandyJSON {
     var cate: Int = 0
     var color: String?
@@ -200,7 +188,6 @@ struct CommentModel: HandyJSON {
     var vip_exp: Int = 0
 }
 
-//评论列表
 struct CommentListModel: HandyJSON {
     var commentCount: Int = 0
     var commentList: [CommentModel]?
@@ -212,14 +199,12 @@ struct CommentListModel: HandyJSON {
     var serverNextPage: Int = 0
 }
 
-//搜索项
 struct SearchItemModel: HandyJSON {
     var comic_id: Int = 0
     var name: String?
     var bgColor: String?
 }
 
-//搜索结果
 struct SearchResultModel: HandyJSON {
     var comicNum: Int = 0
     var hasMore: Bool = false
@@ -227,19 +212,16 @@ struct SearchResultModel: HandyJSON {
     var comics: [ComicModel]?
 }
 
-//热门结果
 struct HotItemsModel: HandyJSON {
     var hotItems: [SearchItemModel]?
     var defaultSearch: String?
 }
 
-//分类
 struct ExtModel: HandyJSON {
     var key: String?
     var val: String?
 }
 
-//滑稽
 struct ComicModel: HandyJSON {
     var comicId: Int = 0
     var comic_id: Int = 0
@@ -283,7 +265,6 @@ struct ComicModel: HandyJSON {
     var ext: [ExtModel]?
 }
 
-//漫画类型
 enum UComicType: Int, HandyJSONEnum {
     case none = 0
     case update = 3
@@ -292,21 +273,19 @@ enum UComicType: Int, HandyJSONEnum {
     case billboard = 11
 }
 
-//微调器
 struct SpinnerModel: HandyJSON {
     var argCon: Int = 0
     var name: String?
     var conTag: String?
+    
 }
 
-//默认参数模型
 struct DefaultParametersModel: HandyJSON {
     var defaultSelection: Int = 0
     var defaultArgCon: Int = 0
     var defaultConTagType: String?
 }
 
-//漫画列表
 struct ComicListModel: HandyJSON {
     var comicType: UComicType = .none
     var canedit: Bool = false
@@ -328,7 +307,6 @@ struct ComicListModel: HandyJSON {
     var page: Int = 0
 }
 
-//画廊项目
 struct GalleryItemModel: HandyJSON {
     var id: Int = 0
     var linkType: Int = 0
@@ -347,7 +325,7 @@ struct TextItemModel: HandyJSON {
     var content: String?
 }
 
-//精品列表
+
 struct BoutiqueListModel: HandyJSON {
     var galleryItems: [GalleryItemModel]?
     var textItems: [TextItemModel]?
@@ -355,17 +333,14 @@ struct BoutiqueListModel: HandyJSON {
     var editTime: TimeInterval = 0
 }
 
-//VIP列表
 struct VipListModel: HandyJSON {
     var newVipList: [ComicListModel]?
 }
 
-//订阅列表
 struct SubscribeListModel: HandyJSON {
     var newSubscribeList: [ComicListModel]?
 }
 
-//排行榜
 struct RankingModel: HandyJSON {
     var argCon: Int = 0
     var argName: String?
@@ -380,12 +355,10 @@ struct RankingModel: HandyJSON {
     var rankingType: Int = 0
 }
 
-//排行列表
 struct RankinglistModel: HandyJSON {
     var rankinglist: [RankingModel]?
 }
 
-//标签
 struct TabModel: HandyJSON {
     var argName: String?
     var argValue: Int = 0
@@ -393,7 +366,6 @@ struct TabModel: HandyJSON {
     var tabTitle: String?
 }
 
-//顶级额外
 struct TopExtra: HandyJSON {
     var title: String?
     var tabList: [TabModel]?
@@ -407,7 +379,6 @@ struct TopModel: HandyJSON {
     var uiWeight: Int = 0
 }
 
-//类别清单
 struct CateListModel: HandyJSON {
     var recommendSearch: String?
     var rankingList:[RankingModel]?
@@ -416,14 +387,12 @@ struct CateListModel: HandyJSON {
 
 extension Array: HandyJSON{}
 
-//返回数据
 struct ReturnData<T: HandyJSON>: HandyJSON {
     var message:String?
     var returnData: T?
     var stateCode: Int = 0
 }
 
-//响应数据
 struct ResponseData<T: HandyJSON>: HandyJSON {
     var code: Int = 0
     var data: ReturnData<T>?

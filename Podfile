@@ -9,7 +9,7 @@ target 'Caricature_Swift' do
   pod 'SnapKit'
   pod 'Then'
   pod 'Moya'
-  pod 'HandyJSON', '5.0.0-beta'
+  pod 'HandyJSON', '~> 5.0.0'
   pod 'Kingfisher'
   pod 'Reusable'
   pod 'LLCycleScrollView'

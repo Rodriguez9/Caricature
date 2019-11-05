@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
-        window?.rootViewController = UMineViewController()
+        window?.rootViewController = USearchViewController()//UMineViewController()
         window?.makeKeyAndVisible()
         //MARK: 修正齐刘海
         UHairPowder.instance.spread()
