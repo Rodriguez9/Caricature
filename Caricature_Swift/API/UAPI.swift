@@ -51,22 +51,6 @@ enum UApi{
     case chapter(chapter_id: Int)//章节内容
 }
 
-//判斷是否連通
-//Endpoint：用于将“目标”枚举的目标确定为具体端点的类
-//RequestResultClosure：决定是否执行以及应执行什么请求的闭包。
-let timeoutClosure = {(endpoint: Endpoint, closure: MoyaProvider<UApi>.RequestResultClosure)
-    -> Void in
-    if var urlRequest = try? endpoint.urlRequest() {
-        urlRequest.timeoutInterval = 20
-        closure(.success(urlRequest))
-    }else{
-        closure(.failure(MoyaError.requestMapping(endpoint.url)))
-    }
-}
-
-let ApiProvider = MoyaProvider<UApi>(requestClosure: timeoutClosure)
-let ApiLoadingProvider = MoyaProvider<UApi>(requestClosure: timeoutClosure,plugins:[LoadingPlugin])
-
 extension UApi: TargetType{
     var sampleData: Data {
         return "".data(using: String.Encoding.utf8)!
@@ -142,6 +126,23 @@ extension UApi: TargetType{
     }
 }
 
+//判斷是否連通
+//Endpoint：用于将“目标”枚举的目标确定为具体端点的类
+//RequestResultClosure：决定是否执行以及应执行什么请求的闭包。
+let timeoutClosure = {(endpoint: Endpoint, closure: MoyaProvider<UApi>.RequestResultClosure)
+    -> Void in
+    if var urlRequest = try? endpoint.urlRequest() {
+        urlRequest.timeoutInterval = 20
+        closure(.success(urlRequest))
+    }else{
+        closure(.failure(MoyaError.requestMapping(endpoint.url)))
+    }
+}
+
+let ApiProvider = MoyaProvider<UApi>(requestClosure: timeoutClosure)
+let ApiLoadingProvider = MoyaProvider<UApi>(requestClosure: timeoutClosure,plugins:[LoadingPlugin])
+
+
 extension Response {
     func mapModel<T: HandyJSON>(_ type: T.Type) throws -> T {
         let jsonString = String(data: data, encoding: .utf8)
@@ -172,3 +173,4 @@ extension MoyaProvider{
         })
     }
 }
+

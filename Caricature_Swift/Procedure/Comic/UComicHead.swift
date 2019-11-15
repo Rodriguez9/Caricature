@@ -27,10 +27,12 @@ class UComicHeadCCell: UBaseCollectionViewCell {
     }
 }
 
+//小说介绍的顶部图片
 class UComicHead: UIView{
     
     private lazy var bgView: UIImageView = {
         let bw = UIImageView()
+        //.isUserInteractionEnabled：一个布尔值，该值确定是否忽略用户事件并将其从事件队列中删除。
         bw.isUserInteractionEnabled = true
         bw.contentMode = .scaleAspectFill
         bw.blurView.setup(style: .dark, alpha: 1).enable()
@@ -92,39 +94,42 @@ class UComicHead: UIView{
     }
     
     func config(){
+        //背景
         addSubview(bgView)
         bgView.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
         }
+        //小说图片
         bgView.addSubview(coverView)
         coverView.snp.makeConstraints { (make) in
             make.left.bottom.equalToSuperview().inset(UIEdgeInsets(top: 0, left: 20, bottom: 20, right: 0))
             make.width.equalTo(90)
             make.height.equalTo(120)
         }
-        
+        //小说名
         bgView.addSubview(nameLabel)
         nameLabel.snp.makeConstraints { (make) in
             make.left.equalTo(coverView.snp.right).offset(20)
+            //.greaterThanOrEqualToSuperview：大于等于Superview
             make.right.greaterThanOrEqualToSuperview().offset(-20)
             make.top.equalTo(coverView)
             make.height.equalTo(20)
         }
-        
+        //小说作者
         bgView.addSubview(authorLabel)
         authorLabel.snp.makeConstraints { (make) in
             make.left.height.equalTo(nameLabel)
             make.right.greaterThanOrEqualToSuperview().offset(-20)
             make.top.equalTo(nameLabel.snp.bottom).offset(5)
         }
-        
+        //点击，收藏
         bgView.addSubview(totalLabel)
         totalLabel.snp.makeConstraints {
             $0.left.height.equalTo(authorLabel)
             $0.right.greaterThanOrEqualToSuperview().offset(-20)
             $0.top.equalTo(authorLabel.snp.bottom).offset(10)
         }
-        
+        //小说主题：动作，同人
         bgView.addSubview(thmemView)
         thmemView.snp.makeConstraints {
             $0.left.equalTo(totalLabel)
@@ -134,6 +139,7 @@ class UComicHead: UIView{
         }
     }
     
+    //静态数据：名字，作者，小说封面
     var detailStatic: ComicStaticModel?{
         didSet{
             guard let detailStatic = detailStatic else {return}
@@ -146,9 +152,12 @@ class UComicHead: UIView{
         }
     }
     
+    //实时数据：点击，收藏
     var detailRealtime: ComicRealtimeModel?{
         didSet{
             guard let detailRealtime = detailRealtime else {return}
+            //NSMutableAttributedString：可变的字符串对象，还包含与其文本内容的各个部分相关联的属性
+            //.attributes：新字符串的属性
             let text = NSMutableAttributedString(string: "点击 收藏")
             text.insert(NSAttributedString(string: "\(detailRealtime.click_total ?? "0")",
                 attributes: [NSAttributedString.Key.foregroundColor: UIColor.orange,

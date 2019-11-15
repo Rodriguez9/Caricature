@@ -7,24 +7,28 @@
 //
 
 import UIKit
-
+//搜索结果界面的Cell布局
 class UComicTCell: UBaseTableViewCell {
     
     var spinnerName: String?
     
+    //封面
     private lazy var iconView: UIImageView = {
         let iw = UIImageView()
         iw.contentMode = .scaleAspectFill
+        //.clipsToBounds：一个布尔值，该值确定子视图是否限于视图的边界。
         iw.clipsToBounds = true
         return iw
     }()
     
+    //小说名
     private lazy var titleLabel: UILabel = {
         let tl = UILabel()
         tl.textColor = UIColor.black
         return tl
     }()
     
+    //副标题：作者，类型
     private lazy var subTitleLabel: UILabel = {
         let sl = UILabel()
         sl.textColor = UIColor.gray
@@ -32,6 +36,7 @@ class UComicTCell: UBaseTableViewCell {
         return sl
     }()
     
+    //简述
     private lazy var descLabel: UILabel = {
         let dl = UILabel()
         dl.textColor = UIColor.gray
@@ -40,6 +45,7 @@ class UComicTCell: UBaseTableViewCell {
         return dl
     }()
     
+    //总点击率
     private lazy var tagLabel: UILabel = {
         let tl = UILabel()
         tl.textColor = UIColor.orange
@@ -54,6 +60,7 @@ class UComicTCell: UBaseTableViewCell {
     }()
     
     override func configUI() {
+        //separatorInset：单元格下方绘制的分隔线的插入值。
         separatorInset = .zero
         
         contentView.addSubview(iconView)
