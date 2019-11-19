@@ -15,6 +15,7 @@ protocol USearchTHeadDelagate: class {
     func searchTHead(_ searchTHead: USearchTHead, moreAction button: UIButton)
 }
 
+/**左边是字，最右边是垃圾桶或者刷新*/
 class USearchTHead: UBaseTableViewHeaderFooterView {
     //weak:无法确定弱引用在某一时刻是否为空时，将可能为空的实例声明为弱引用
     weak var delegate: USearchTHeadDelagate?

@@ -10,6 +10,7 @@ import UIKit
 import Reusable
 import SnapKit
 
+//放置在表部分顶部或底部的可重用视图，以显示该部分的其他信息。
 class UBaseTableViewHeaderFooterView: UITableViewHeaderFooterView,Reusable{
 
     required init?(coder aDecoder: NSCoder) {

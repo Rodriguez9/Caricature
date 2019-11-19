@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//搜索结果界面的Cell布局
+/**搜索结果界面的Cell布局*/
 class UComicTCell: UBaseTableViewCell {
     
     var spinnerName: String?

@@ -199,12 +199,14 @@ struct CommentListModel: HandyJSON {
     var serverNextPage: Int = 0
 }
 
+/**相关搜索的内容*/
 struct SearchItemModel: HandyJSON {
     var comic_id: Int = 0
     var name: String?
     var bgColor: String?
 }
 
+/**搜索结果*/
 struct SearchResultModel: HandyJSON {
     var comicNum: Int = 0
     var hasMore: Bool = false
@@ -222,6 +224,7 @@ struct ExtModel: HandyJSON {
     var val: String?
 }
 
+//小说信息
 struct ComicModel: HandyJSON {
     var comicId: Int = 0
     var comic_id: Int = 0
@@ -279,13 +282,14 @@ struct SpinnerModel: HandyJSON {
     var conTag: String?
     
 }
-
+/**默认参数模型*/
 struct DefaultParametersModel: HandyJSON {
     var defaultSelection: Int = 0
     var defaultArgCon: Int = 0
     var defaultConTagType: String?
 }
 
+//分类列表排行榜
 struct ComicListModel: HandyJSON {
     var comicType: UComicType = .none
     var canedit: Bool = false
@@ -380,6 +384,7 @@ struct TopModel: HandyJSON {
 }
 
 struct CateListModel: HandyJSON {
+    //推荐搜索
     var recommendSearch: String?
     var rankingList:[RankingModel]?
     var topList:[TopModel]?

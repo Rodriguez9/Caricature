@@ -10,11 +10,12 @@ import Foundation
 import MJRefresh
 
 extension UIScrollView{
+    //下拉刷新
     var uHead:MJRefreshHeader{
         get {return mj_header}
         set {mj_header = newValue}
     }
-    
+    //上拉刷新
     var uFoot: MJRefreshFooter{
         get {return mj_footer}
         set {mj_footer = newValue}

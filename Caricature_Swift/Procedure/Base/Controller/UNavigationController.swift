@@ -30,6 +30,7 @@ class UNavigationController: UINavigationController {
     
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if viewControllers.count > 0 {
+            //隐藏在底部TarBar
             viewController.hidesBottomBarWhenPushed = true
         }
         super.pushViewController(viewController, animated: animated)

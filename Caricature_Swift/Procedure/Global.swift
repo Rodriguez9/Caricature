@@ -73,21 +73,22 @@ func uLog<T>(_ message: T, file: String = #file, function: String = #function, l
 extension KingfisherWrapper where Base: ImageView {
     @discardableResult
     //默認圖片時“normal_placeholder_h”
-    public func setImage(urlString: String?, placeholder: Placeholder? = UIImage(named: "normal_placeholder_h")) -> DownloadTask {
+    public func setImage(urlString: String?, placeholder: Placeholder? = UIImage(named: "normal_placeholder_h")) -> DownloadTask? {
         return setImage(with: URL(string: urlString ?? ""),
                         placeholder: placeholder,
-                        options:[.transition(.fade(0.5))])!
+                        options:[.transition(.fade(0.5))])
     }
+
 }
 
 extension KingfisherWrapper where Base: UIButton{
     @discardableResult
     //默認圖片時“normal_placeholder_h”
-    public func setImage(urlString: String?, for state: UIControl.State, placeholder: UIImage? = UIImage(named: "normal_placeholder_h")) -> DownloadTask {
+    public func setImage(urlString: String?, for state: UIControl.State, placeholder: UIImage? = UIImage(named: "normal_placeholder_h")) -> DownloadTask? {
         return setImage(with: URL(string: urlString ?? ""),
                         for: state,
                         placeholder: placeholder,
-                        options: [.transition(.fade(0.5))])!
+                        options: [.transition(.fade(0.5))])
 
     }
 }

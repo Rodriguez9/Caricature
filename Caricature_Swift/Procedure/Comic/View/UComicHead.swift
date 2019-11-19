@@ -4,7 +4,7 @@
 //
 //  Created by 姚智豪 on 2019/10/28.
 //  Copyright © 2019 姚智豪. All rights reserved.
-//
+//小说简介，点击阅读前的界面
 
 import UIKit
 

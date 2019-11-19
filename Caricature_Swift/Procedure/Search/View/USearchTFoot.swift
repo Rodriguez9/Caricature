@@ -36,6 +36,7 @@ protocol USearchTFootDelegate: class {
     func searchTFoot(_ searchTFoot: USearchTFoot, didSelectItemAt index: Int, _ model: SearchItemModel)
 }
 
+/**搜索界面底部的collectionView*/
 class USearchTFoot: UBaseTableViewHeaderFooterView {
 
     weak var delegate : USearchTFootDelegate?

@@ -13,9 +13,9 @@ class USearchViewController: UBaseViewController {
     
     //Cancellable：定义从请求返回的不透明类型的协议。
     private var currentRequest:Cancellable?
-    
+    /**热门搜索*/
     private var hotItems: [SearchItemModel]?
-    
+     /**相关搜索的内容*/
     private var relative: [SearchItemModel]?
     
     private var comics: [ComicModel]?
@@ -210,6 +210,8 @@ extension USearchViewController: UITableViewDelegate,UITableViewDataSource{
         }
     }
     
+    //historyTableView：如果第一组数据要显示搜索历史，第二组不需要
+    //searchTableView：显示相关的搜索内容
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if tableView == historyTableView {
             return section == 0 ? (searchHistory?.prefix(5).count ?? 0) : 0
@@ -261,7 +263,8 @@ extension USearchViewController: UITableViewDelegate,UITableViewDataSource{
             searchResult(relative?[indexPath.row].name ?? "")
         }else if tableView == resultTableView{
             guard let model = comics?[indexPath.row] else {return}
-            //還沒定義
+            let vc = UComicViewController(comicid: model.comicId)
+            navigationController?.pushViewController(vc, animated: true)
         }
     }
     
@@ -318,10 +321,10 @@ extension USearchViewController: UITableViewDelegate,UITableViewDataSource{
         if tableView == historyTableView && section == 1 {
             let foot = tableView.dequeueReusableHeaderFooterView(USearchTFoot.self)
             foot?.data = hotItems ?? []
-//            foot?.didSelectIndexClosure{ [weak self] (index, model) in
-//               // let vc = UComic
-//                
-//            }
+            foot?.didSelectIndexClosure{ [weak self] (index, model) in
+                let vc = UComicViewController(comicid: model.comic_id)
+                self?.navigationController?.pushViewController(vc, animated: true)
+            }
             return foot
         }else{
             return nil
