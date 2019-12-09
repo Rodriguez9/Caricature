@@ -16,14 +16,36 @@ class UTabBarController: UITabBarController {
         //一个布尔值，指示标签栏是否为半透明。
         tabBar.isTranslucent = false
         
-        //分类
+        ///首页
+        let onePageVC = UHomeViewController(titles: ["推荐","VIP","订阅","排行"],
+                                            vcs: [UBoutiqueListViewController(),
+                                                  UVIPListViewController(),
+                                                  USubscibeListViewController(),
+                                                  URankListViewController()],
+                                            pageStyle: .navgationBarSegment)
+        addChildViewController(onePageVC, title: "首页",
+                               image: UIImage(named: "tab_home"),
+                               selectedImage: UIImage(named: "tab_home_S"))
+        
+        
+        ///书架
+        let bookVC = UBookViewController(titles: ["收藏","书单","下载"],
+                                         vcs: [UCollectListViewController(),
+                                               UDocumentListViewController(),
+                                               UDownloadListViewController()],
+                                         pageStyle: .navgationBarSegment)
+        addChildViewController(bookVC, title: "书架",
+                               image: UIImage(named: "tab_book"),
+                               selectedImage: UIImage(named: "tab_book_S"))
+        
+        ///分类
         let classVC = UCateListViewController()
         addChildViewController(classVC,
                                title: "分类",
                                image: UIImage(named: "tab_class"),
                                selectedImage: UIImage(named: "tab_class_S"))
         
-        //我的
+        ///我的
         let mineVC = UMineViewController()
         addChildViewController(mineVC,
                                title: "我的",

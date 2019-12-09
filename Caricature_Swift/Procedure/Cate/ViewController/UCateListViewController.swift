@@ -9,6 +9,7 @@
 import UIKit
 import MJRefresh
 
+/**分类界面*/
 class UCateListViewController: UBaseViewController {
 
     private var searchString = ""

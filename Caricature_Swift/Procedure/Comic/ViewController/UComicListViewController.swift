@@ -8,7 +8,7 @@
 
 import UIKit
 
-/**搜索结果或打开分类d后显示的界面*/
+/**搜索结果或打开分类后显示的界面*/
 class UComicListViewController: UBaseViewController {
     
     /**分类的参数*/

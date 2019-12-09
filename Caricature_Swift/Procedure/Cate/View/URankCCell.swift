@@ -8,6 +8,7 @@
 
 import UIKit
 
+/**分类界面的cell*/
 class URankCCell: UBaseCollectionViewCell {
     
     private lazy var iconView: UIImageView = {

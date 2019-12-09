@@ -27,9 +27,9 @@ class UBaseViewController: UIViewController {
         configUI()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        configNavigationBar()
+    override func viewWillAppear(_ animated: Bool) {
+         super.viewWillAppear(animated)
+               configNavigationBar()
     }
     
     func configUI(){}

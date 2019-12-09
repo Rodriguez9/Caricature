@@ -10,19 +10,19 @@ import Foundation
 import MJRefresh
 
 extension UIScrollView{
-    //下拉刷新
+    /**下拉刷新*/
     var uHead:MJRefreshHeader{
         get {return mj_header}
         set {mj_header = newValue}
     }
-    //上拉刷新
+    /**上拉刷新*/
     var uFoot: MJRefreshFooter{
         get {return mj_footer}
         set {mj_footer = newValue}
     }
 }
 
-//下拉刷新,有文字刷新状态，有刷新效果
+/**下拉刷新,有文字刷新状态，有刷新效果*/
 class URefreshHeader: MJRefreshGifHeader{
     override func prepare() {
         super.prepare()
@@ -47,7 +47,7 @@ class URefreshFooter: MJRefreshBackNormalFooter {}
 
 class URefreshAutoFooter: MJRefreshAutoFooter {}
 
-//上拉加载,有文字刷新状态，有刷新效果
+/**上拉加载,有文字刷新状态，有刷新效果*/
 class URefreshDiscoverFooter: MJRefreshBackGifFooter {
     
     override func prepare() {
@@ -59,7 +59,7 @@ class URefreshDiscoverFooter: MJRefreshBackGifFooter {
     }
 }
 
-//没有任何刷新的UI，但是有刷新效果。
+/**没有任何刷新的UI，但是有刷新效果*/
 class URefreshTipKissFooter: MJRefreshBackFooter {
     
     lazy var tipLabel: UILabel = {

@@ -148,6 +148,7 @@ struct LevelModel: HandyJSON {
     var wage: Int = 0
 }
 
+/**订阅清单*/
 struct CommentModel: HandyJSON {
     var cate: Int = 0
     var color: String?
@@ -224,7 +225,7 @@ struct ExtModel: HandyJSON {
     var val: String?
 }
 
-//小说信息
+/**小说信息*/
 struct ComicModel: HandyJSON {
     var comicId: Int = 0
     var comic_id: Int = 0
@@ -289,22 +290,22 @@ struct DefaultParametersModel: HandyJSON {
     var defaultConTagType: String?
 }
 
-//分类列表排行榜
+/**分类列表排行榜*/
 struct ComicListModel: HandyJSON {
     var comicType: UComicType = .none
     var canedit: Bool = false
     var sortId: Int = 0
-    var titleIconUrl: String?
-    var newTitleIconUrl: String?
+    var titleIconUrl: String?//
+    var newTitleIconUrl: String?//
     var description: String?
-    var itemTitle: String?
+    var itemTitle: String?//
     var argCon: Int = 0
-    var argName: String?
-    var argValue: Int = 0
+    var argName: String?//
+    var argValue: Int = 0//
     var argType: Int = 0
-    var comics:[ComicModel]?
-    var maxSize: Int = 0
-    var canMore: Bool = false
+    var comics:[ComicModel]?//
+    var maxSize: Int = 0//
+    var canMore: Bool = false//
     var hasMore: Bool = false
     var spinnerList: [SpinnerModel]?
     var defaultParameters: DefaultParametersModel?
@@ -340,11 +341,12 @@ struct BoutiqueListModel: HandyJSON {
 struct VipListModel: HandyJSON {
     var newVipList: [ComicListModel]?
 }
-
+/**订阅信息*/
 struct SubscribeListModel: HandyJSON {
     var newSubscribeList: [ComicListModel]?
 }
 
+/**排行榜*/
 struct RankingModel: HandyJSON {
     var argCon: Int = 0
     var argName: String?

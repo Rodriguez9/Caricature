@@ -50,6 +50,11 @@
 		0350F7BF2344FFDC00126CCD /* UEmptyDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0350F7BE2344FFDC00126CCD /* UEmptyDataSet.swift */; };
 		0354E4B82351C33B0081F966 /* UCollectionViewAlignedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0354E4B72351C33B0081F966 /* UCollectionViewAlignedLayout.swift */; };
 		0354E4BA235369990081F966 /* UCollectionViewSectionBackgroundLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0354E4B9235369990081F966 /* UCollectionViewSectionBackgroundLayout.swift */; };
+		0370E7A32385A0D400DD8B22 /* UHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370E7A22385A0D400DD8B22 /* UHomeViewController.swift */; };
+		0370E7A52385A27900DD8B22 /* UBoutiqueListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370E7A42385A27900DD8B22 /* UBoutiqueListViewController.swift */; };
+		0370E7A72385A29E00DD8B22 /* UVIPListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370E7A62385A29E00DD8B22 /* UVIPListViewController.swift */; };
+		0370E7A92385A2BB00DD8B22 /* USubscibeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370E7A82385A2BB00DD8B22 /* USubscibeListViewController.swift */; };
+		0370E7AB2385A2D700DD8B22 /* URankListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0370E7AA2385A2D700DD8B22 /* URankListViewController.swift */; };
 		039023DF2381A85400CCAADC /* UComicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039023DE2381A85400CCAADC /* UComicListViewController.swift */; };
 		039A25F7230BFCFB001AA408 /* UBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039A25F6230BFCFA001AA408 /* UBaseViewController.swift */; };
 		039A25FA230C003F001AA408 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039A25F9230C003F001AA408 /* UIColorExtension.swift */; };
@@ -60,6 +65,10 @@
 		03B8768523805CD900FF568B /* UCateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8768423805CD900FF568B /* UCateListViewController.swift */; };
 		03C0BD322359C3030097E69E /* UMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C0BD312359C3030097E69E /* UMineViewController.swift */; };
 		03EC4C20232FA02400D8B7B4 /* UWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EC4C1F232FA02400D8B7B4 /* UWebViewController.swift */; };
+		7C694D2F2396C17A0060087B /* UComicCHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C694D2E2396C17A0060087B /* UComicCHead.swift */; };
+		7C694D312396C7650060087B /* UComicCFoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C694D302396C7650060087B /* UComicCFoot.swift */; };
+		7CA2373023966BAE00BFAFAE /* UComicCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA2372F23966BAD00BFAFAE /* UComicCCell.swift */; };
+		7CC8BBFF2395197B003A061F /* URankTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8BBFE2395197B003A061F /* URankTCell.swift */; };
 		841349EBD9F1FFE8AF3DED01 /* Pods_Caricature_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4ECF4444F8B618D9AEB3672 /* Pods_Caricature_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +118,11 @@
 		0350F7BE2344FFDC00126CCD /* UEmptyDataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEmptyDataSet.swift; sourceTree = "<group>"; };
 		0354E4B72351C33B0081F966 /* UCollectionViewAlignedLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCollectionViewAlignedLayout.swift; sourceTree = "<group>"; };
 		0354E4B9235369990081F966 /* UCollectionViewSectionBackgroundLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCollectionViewSectionBackgroundLayout.swift; sourceTree = "<group>"; };
+		0370E7A22385A0D400DD8B22 /* UHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UHomeViewController.swift; sourceTree = "<group>"; };
+		0370E7A42385A27900DD8B22 /* UBoutiqueListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBoutiqueListViewController.swift; sourceTree = "<group>"; };
+		0370E7A62385A29E00DD8B22 /* UVIPListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UVIPListViewController.swift; sourceTree = "<group>"; };
+		0370E7A82385A2BB00DD8B22 /* USubscibeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USubscibeListViewController.swift; sourceTree = "<group>"; };
+		0370E7AA2385A2D700DD8B22 /* URankListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URankListViewController.swift; sourceTree = "<group>"; };
 		039023DE2381A85400CCAADC /* UComicListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UComicListViewController.swift; sourceTree = "<group>"; };
 		039A25F6230BFCFA001AA408 /* UBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBaseViewController.swift; sourceTree = "<group>"; };
 		039A25F9230C003F001AA408 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -120,6 +134,10 @@
 		03C0BD312359C3030097E69E /* UMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMineViewController.swift; sourceTree = "<group>"; };
 		03EC4C1F232FA02400D8B7B4 /* UWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWebViewController.swift; sourceTree = "<group>"; };
 		5F7CD7CF795788B0CE6F1FF0 /* Pods-Caricature_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caricature_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Caricature_Swift/Pods-Caricature_Swift.release.xcconfig"; sourceTree = "<group>"; };
+		7C694D2E2396C17A0060087B /* UComicCHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UComicCHead.swift; sourceTree = "<group>"; };
+		7C694D302396C7650060087B /* UComicCFoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UComicCFoot.swift; sourceTree = "<group>"; };
+		7CA2372F23966BAD00BFAFAE /* UComicCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UComicCCell.swift; sourceTree = "<group>"; };
+		7CC8BBFE2395197B003A061F /* URankTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URankTCell.swift; sourceTree = "<group>"; };
 		85CF236D36DAE7814D71F8A6 /* Pods-Caricature_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caricature_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Caricature_Swift/Pods-Caricature_Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		F4ECF4444F8B618D9AEB3672 /* Pods_Caricature_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Caricature_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -342,6 +360,7 @@
 		03406BBE22FC46DE007DDF0E /* Procedure */ = {
 			isa = PBXGroup;
 			children = (
+				0370E7A12385A03500DD8B22 /* Home */,
 				03B8767D2380574800FF568B /* Cate */,
 				0314F2342367367C0013F36B /* Comic */,
 				03065A09235D7DF100FF59D1 /* Book */,
@@ -377,6 +396,18 @@
 				0354E4B9235369990081F966 /* UCollectionViewSectionBackgroundLayout.swift */,
 			);
 			path = CollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		0370E7A12385A03500DD8B22 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8BBFB23951938003A061F /* RankListViewController */,
+				7CC8BBF823951913003A061F /* SubscibeListViewController */,
+				7CC8BBF5239518ED003A061F /* VIPListViewController */,
+				7CC8BBF2239518C6003A061F /* BoutiqueListView */,
+				7CC8BBEF23951897003A061F /* HomeViewController */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		039A25F8230C0015001AA408 /* Extension */ = {
@@ -445,6 +476,130 @@
 				F4ECF4444F8B618D9AEB3672 /* Pods_Caricature_Swift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7CC8BBEF23951897003A061F /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8BBF1239518B6003A061F /* View */,
+				7CC8BBF0239518AC003A061F /* VIewController */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		7CC8BBF0239518AC003A061F /* VIewController */ = {
+			isa = PBXGroup;
+			children = (
+				0370E7A22385A0D400DD8B22 /* UHomeViewController.swift */,
+			);
+			path = VIewController;
+			sourceTree = "<group>";
+		};
+		7CC8BBF1239518B6003A061F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7CC8BBF2239518C6003A061F /* BoutiqueListView */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8BBF4239518DB003A061F /* View */,
+				7CC8BBF3239518D1003A061F /* ViewController */,
+			);
+			path = BoutiqueListView;
+			sourceTree = "<group>";
+		};
+		7CC8BBF3239518D1003A061F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0370E7A42385A27900DD8B22 /* UBoutiqueListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7CC8BBF4239518DB003A061F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7CC8BBF5239518ED003A061F /* VIPListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8BBF6239518FC003A061F /* View */,
+				7CC8BBF723951901003A061F /* ViewController */,
+			);
+			path = VIPListViewController;
+			sourceTree = "<group>";
+		};
+		7CC8BBF6239518FC003A061F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7CC8BBF723951901003A061F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0370E7A62385A29E00DD8B22 /* UVIPListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7CC8BBF823951913003A061F /* SubscibeListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8BBFA23951927003A061F /* View */,
+				7CC8BBF923951922003A061F /* ViewController */,
+			);
+			path = SubscibeListViewController;
+			sourceTree = "<group>";
+		};
+		7CC8BBF923951922003A061F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0370E7A82385A2BB00DD8B22 /* USubscibeListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7CC8BBFA23951927003A061F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7CA2372F23966BAD00BFAFAE /* UComicCCell.swift */,
+				7C694D2E2396C17A0060087B /* UComicCHead.swift */,
+				7C694D302396C7650060087B /* UComicCFoot.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7CC8BBFB23951938003A061F /* RankListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8BBFD23951947003A061F /* View */,
+				7CC8BBFC23951943003A061F /* ViewController */,
+			);
+			path = RankListViewController;
+			sourceTree = "<group>";
+		};
+		7CC8BBFC23951943003A061F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0370E7AA2385A2D700DD8B22 /* URankListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7CC8BBFD23951947003A061F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8BBFE2395197B003A061F /* URankTCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		DE16BAF11461EF16F74D6908 /* Pods */ = {
@@ -596,6 +751,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0370E7A92385A2BB00DD8B22 /* USubscibeListViewController.swift in Sources */,
 				0354E4BA235369990081F966 /* UCollectionViewSectionBackgroundLayout.swift in Sources */,
 				03406BAF22FC366B007DDF0E /* ViewController.swift in Sources */,
 				032E1A0123482F10006F5573 /* ParallaxHeader.swift in Sources */,
@@ -603,19 +759,24 @@
 				0354E4B82351C33B0081F966 /* UCollectionViewAlignedLayout.swift in Sources */,
 				03B8768123805B3600FF568B /* UTopCCell.swift in Sources */,
 				032165B6233A76FA005F015A /* UHairPowder.swift in Sources */,
+				0370E7AB2385A2D700DD8B22 /* URankListViewController.swift in Sources */,
 				0314A97F23576A3200B1CF2D /* UAPI.swift in Sources */,
 				031C0248230AB1F7000656EC /* UBaseCollectionViewCell.swift in Sources */,
 				031C024C230AB4F0000656EC /* UBaseCollectionReusableView.swift in Sources */,
 				03406BAD22FC366B007DDF0E /* AppDelegate.swift in Sources */,
 				039A25F7230BFCFB001AA408 /* UBaseViewController.swift in Sources */,
 				031355262302C09D00E830DE /* UBaseTableViewHeaderFooterView.swift in Sources */,
+				0370E7A72385A29E00DD8B22 /* UVIPListViewController.swift in Sources */,
+				7C694D312396C7650060087B /* UComicCFoot.swift in Sources */,
 				03406BC022FC4700007DDF0E /* Global.swift in Sources */,
 				039A25FA230C003F001AA408 /* UIColorExtension.swift in Sources */,
 				0314A97C2357630D00B1CF2D /* UModel.swift in Sources */,
 				0314F2382367457F0013F36B /* UComicTCell.swift in Sources */,
 				03065A15235D7E9A00FF59D1 /* USearchTHead.swift in Sources */,
+				0370E7A52385A27900DD8B22 /* UBoutiqueListViewController.swift in Sources */,
 				03065A0C235D7E1100FF59D1 /* UCollectListViewController.swift in Sources */,
 				03B8768523805CD900FF568B /* UCateListViewController.swift in Sources */,
+				7CA2373023966BAE00BFAFAE /* UComicCCell.swift in Sources */,
 				03B8767C2380498100FF568B /* UComicViewController.swift in Sources */,
 				030FA75723210276008DF4E7 /* UIBarButtonItemExtension.swift in Sources */,
 				031DE49B2322748A0058AABD /* DictionaryExtension.swift in Sources */,
@@ -629,8 +790,10 @@
 				0350F7BF2344FFDC00126CCD /* UEmptyDataSet.swift in Sources */,
 				0307FE652358CD6400EA5D90 /* USettingViewController.swift in Sources */,
 				0348346A232AA537003F7563 /* ConstraintArrayDSL.swift in Sources */,
+				0370E7A32385A0D400DD8B22 /* UHomeViewController.swift in Sources */,
 				03130397235F5E28005E7183 /* USearchViewController.swift in Sources */,
 				031DE497232274280058AABD /* UIImageExtensions.swift in Sources */,
+				7CC8BBFF2395197B003A061F /* URankTCell.swift in Sources */,
 				0307FE632358CAAA00EA5D90 /* UMineHead.swift in Sources */,
 				031DE493232262D30058AABD /* StringExtension.swift in Sources */,
 				0349947C23487A33004F3395 /* UNoticeBar.swift in Sources */,
@@ -644,6 +807,7 @@
 				03B8767F238057CE00FF568B /* URankCCell.swift in Sources */,
 				03065A12235D7E5D00FF59D1 /* UDownloadListViewController.swift in Sources */,
 				031DE49D232275980058AABD /* DispatchQueueExtension.swift in Sources */,
+				7C694D2F2396C17A0060087B /* UComicCHead.swift in Sources */,
 				033CD3A62345EA46006B52D0 /* URefresh.swift in Sources */,
 				03155E4A233279720012B606 /* UPageViewController.swift in Sources */,
 			);
