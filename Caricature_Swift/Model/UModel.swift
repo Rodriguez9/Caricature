@@ -215,6 +215,7 @@ struct SearchResultModel: HandyJSON {
     var comics: [ComicModel]?
 }
 
+/**搜索热门*/
 struct HotItemsModel: HandyJSON {
     var hotItems: [SearchItemModel]?
     var defaultSearch: String?
@@ -290,7 +291,7 @@ struct DefaultParametersModel: HandyJSON {
     var defaultConTagType: String?
 }
 
-/**分类列表排行榜*/
+/**分类列表排行榜,目錄*/
 struct ComicListModel: HandyJSON {
     var comicType: UComicType = .none
     var canedit: Bool = false
@@ -312,6 +313,7 @@ struct ComicListModel: HandyJSON {
     var page: Int = 0
 }
 
+/**画廊*/
 struct GalleryItemModel: HandyJSON {
     var id: Int = 0
     var linkType: Int = 0
