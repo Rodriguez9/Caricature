@@ -104,7 +104,7 @@ class UCollectionViewSectionBackgroundLayout: UICollectionViewFlowLayout{
             //numberOfItems：返回指定部分中的项目数
             //layoutAttributesForItem：返回指定索引路径下项目的布局属性
             guard let numberOfItems = collectionView?.numberOfItems(inSection: section),
-                numberOfSections > 0,
+                numberOfItems > 0,
                 let firstItem = layoutAttributesForItem(at: indexPath),
                 let lastItem = layoutAttributesForItem(at: IndexPath(item: numberOfSections - 1, section: section))
                 else{ continue }

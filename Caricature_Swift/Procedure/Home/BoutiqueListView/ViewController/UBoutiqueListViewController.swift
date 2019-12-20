@@ -166,7 +166,7 @@ extension UBoutiqueListViewController: UCollectionViewSectionBackgroundLayoutDel
                     let vc = UUpdateListViewController(argCon: comicList.argCon,
                                                        argName: comicList.argName,
                                                        argValue: comicList.argValue)
-                    self?.title = comicList.itemTitle
+                    vc.title = comicList.itemTitle
                     self?.navigationController?.pushViewController(vc, animated: true)
                 }else{
                     let vc = UComicListViewController(argCon: comicList.argCon,
