@@ -67,6 +67,7 @@
 		03EC4C20232FA02400D8B7B4 /* UWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EC4C1F232FA02400D8B7B4 /* UWebViewController.swift */; };
 		7C1318FC23A69FA3002360CE /* USpecialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1318FB23A69FA3002360CE /* USpecialViewController.swift */; };
 		7C1318FF23A6A214002360CE /* UUpdateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1318FE23A6A214002360CE /* UUpdateListViewController.swift */; };
+		7C4572E323AD3DBF00345CC8 /* UUpdateTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4572E223AD3DBF00345CC8 /* UUpdateTCell.swift */; };
 		7C694D2F2396C17A0060087B /* UComicCHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C694D2E2396C17A0060087B /* UComicCHead.swift */; };
 		7C694D312396C7650060087B /* UComicCFoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C694D302396C7650060087B /* UComicCFoot.swift */; };
 		7C8B8ABD23A14E5700FFC7A5 /* UBoardCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B8ABC23A14E5700FFC7A5 /* UBoardCCell.swift */; };
@@ -140,6 +141,7 @@
 		5F7CD7CF795788B0CE6F1FF0 /* Pods-Caricature_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caricature_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Caricature_Swift/Pods-Caricature_Swift.release.xcconfig"; sourceTree = "<group>"; };
 		7C1318FB23A69FA3002360CE /* USpecialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USpecialViewController.swift; sourceTree = "<group>"; };
 		7C1318FE23A6A214002360CE /* UUpdateListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUpdateListViewController.swift; sourceTree = "<group>"; };
+		7C4572E223AD3DBF00345CC8 /* UUpdateTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUpdateTCell.swift; sourceTree = "<group>"; };
 		7C694D2E2396C17A0060087B /* UComicCHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UComicCHead.swift; sourceTree = "<group>"; };
 		7C694D302396C7650060087B /* UComicCFoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UComicCFoot.swift; sourceTree = "<group>"; };
 		7C8B8ABC23A14E5700FFC7A5 /* UBoardCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBoardCCell.swift; sourceTree = "<group>"; };
@@ -500,9 +502,26 @@
 		7C1318FD23A6A202002360CE /* UpdateListViewController */ = {
 			isa = PBXGroup;
 			children = (
-				7C1318FE23A6A214002360CE /* UUpdateListViewController.swift */,
+				7C4572E123AD3D9F00345CC8 /* View */,
+				7C4572E023AD3D8F00345CC8 /* ViewController */,
 			);
 			path = UpdateListViewController;
+			sourceTree = "<group>";
+		};
+		7C4572E023AD3D8F00345CC8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7C1318FE23A6A214002360CE /* UUpdateListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7C4572E123AD3D9F00345CC8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C4572E223AD3DBF00345CC8 /* UUpdateTCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		7C9D08AC23A93D9600BB6C3A /* View */ = {
@@ -852,6 +871,7 @@
 				0314F236236736B60013F36B /* UComicHead.swift in Sources */,
 				03130394235F07E3005E7183 /* USearchTFoot.swift in Sources */,
 				03065A10235D7E4600FF59D1 /* UDocumentListViewController.swift in Sources */,
+				7C4572E323AD3DBF00345CC8 /* UUpdateTCell.swift in Sources */,
 				03B8767F238057CE00FF568B /* URankCCell.swift in Sources */,
 				03065A12235D7E5D00FF59D1 /* UDownloadListViewController.swift in Sources */,
 				031DE49D232275980058AABD /* DispatchQueueExtension.swift in Sources */,
