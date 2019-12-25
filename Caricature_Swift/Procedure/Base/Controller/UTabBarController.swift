@@ -51,7 +51,7 @@ class UTabBarController: UITabBarController {
                                title: "我的",
                                image: UIImage(named: "tab_mine"),
                                selectedImage: UIImage(named: "tab_mine_S"))
-        
+
     }
     
      func addChildViewController(_ childController: UIViewController, title:String?, image:UIImage? ,selectedImage:UIImage?) {
@@ -75,3 +75,4 @@ extension UTabBarController{
         return select.preferredStatusBarStyle
     }
 }
+

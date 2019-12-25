@@ -67,7 +67,17 @@
 		03EC4C20232FA02400D8B7B4 /* UWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EC4C1F232FA02400D8B7B4 /* UWebViewController.swift */; };
 		7C1318FC23A69FA3002360CE /* USpecialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1318FB23A69FA3002360CE /* USpecialViewController.swift */; };
 		7C1318FF23A6A214002360CE /* UUpdateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1318FE23A6A214002360CE /* UUpdateListViewController.swift */; };
+		7C17A78823B3A94000198B9E /* UChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C17A78723B3A94000198B9E /* UChapterViewController.swift */; };
+		7C17A78A23B3AB2500198B9E /* UChapterCHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C17A78923B3AB2500198B9E /* UChapterCHead.swift */; };
+		7C17A78C23B3B17D00198B9E /* UChapterCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C17A78B23B3B17D00198B9E /* UChapterCCell.swift */; };
+		7C2201AA23B1278B005FDDFA /* UOtherWorksTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2201A923B1278B005FDDFA /* UOtherWorksTCell.swift */; };
+		7C2201AC23B12E3E005FDDFA /* UTicketTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2201AB23B12E3E005FDDFA /* UTicketTCell.swift */; };
+		7C2201AE23B13144005FDDFA /* UGuessLikeTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2201AD23B13144005FDDFA /* UGuessLikeTCell.swift */; };
+		7C28C71B23AFD19900BF8CBE /* UDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C28C71A23AFD19900BF8CBE /* UDetailViewController.swift */; };
+		7C28C71D23AFD35200BF8CBE /* UDescriptionTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C28C71C23AFD35200BF8CBE /* UDescriptionTCell.swift */; };
 		7C4572E323AD3DBF00345CC8 /* UUpdateTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4572E223AD3DBF00345CC8 /* UUpdateTCell.swift */; };
+		7C4E964323B277BA00C70EC9 /* UOtherWorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4E964223B277BA00C70EC9 /* UOtherWorksViewController.swift */; };
+		7C4E964523B2FABB00C70EC9 /* UOtherWorksCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4E964423B2FABB00C70EC9 /* UOtherWorksCCell.swift */; };
 		7C694D2F2396C17A0060087B /* UComicCHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C694D2E2396C17A0060087B /* UComicCHead.swift */; };
 		7C694D312396C7650060087B /* UComicCFoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C694D302396C7650060087B /* UComicCFoot.swift */; };
 		7C8B8ABD23A14E5700FFC7A5 /* UBoardCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B8ABC23A14E5700FFC7A5 /* UBoardCCell.swift */; };
@@ -141,7 +151,17 @@
 		5F7CD7CF795788B0CE6F1FF0 /* Pods-Caricature_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caricature_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Caricature_Swift/Pods-Caricature_Swift.release.xcconfig"; sourceTree = "<group>"; };
 		7C1318FB23A69FA3002360CE /* USpecialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USpecialViewController.swift; sourceTree = "<group>"; };
 		7C1318FE23A6A214002360CE /* UUpdateListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUpdateListViewController.swift; sourceTree = "<group>"; };
+		7C17A78723B3A94000198B9E /* UChapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UChapterViewController.swift; sourceTree = "<group>"; };
+		7C17A78923B3AB2500198B9E /* UChapterCHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UChapterCHead.swift; sourceTree = "<group>"; };
+		7C17A78B23B3B17D00198B9E /* UChapterCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UChapterCCell.swift; sourceTree = "<group>"; };
+		7C2201A923B1278B005FDDFA /* UOtherWorksTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UOtherWorksTCell.swift; sourceTree = "<group>"; };
+		7C2201AB23B12E3E005FDDFA /* UTicketTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTicketTCell.swift; sourceTree = "<group>"; };
+		7C2201AD23B13144005FDDFA /* UGuessLikeTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UGuessLikeTCell.swift; sourceTree = "<group>"; };
+		7C28C71A23AFD19900BF8CBE /* UDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDetailViewController.swift; sourceTree = "<group>"; };
+		7C28C71C23AFD35200BF8CBE /* UDescriptionTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDescriptionTCell.swift; sourceTree = "<group>"; };
 		7C4572E223AD3DBF00345CC8 /* UUpdateTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUpdateTCell.swift; sourceTree = "<group>"; };
+		7C4E964223B277BA00C70EC9 /* UOtherWorksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UOtherWorksViewController.swift; sourceTree = "<group>"; };
+		7C4E964423B2FABB00C70EC9 /* UOtherWorksCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UOtherWorksCCell.swift; sourceTree = "<group>"; };
 		7C694D2E2396C17A0060087B /* UComicCHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UComicCHead.swift; sourceTree = "<group>"; };
 		7C694D302396C7650060087B /* UComicCFoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UComicCFoot.swift; sourceTree = "<group>"; };
 		7C8B8ABC23A14E5700FFC7A5 /* UBoardCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBoardCCell.swift; sourceTree = "<group>"; };
@@ -283,13 +303,16 @@
 			path = API;
 			sourceTree = "<group>";
 		};
-		0314F2342367367C0013F36B /* Comic */ = {
+		0314F2342367367C0013F36B /* Comic(显示小说目录和简介) */ = {
 			isa = PBXGroup;
 			children = (
-				03B876792380492400FF568B /* View */,
-				03B8767A2380493800FF568B /* ViewController */,
+				7C4E965623B3A6DE00C70EC9 /* Chapter(章节) */,
+				03B8767B2380498100FF568B /* UComicViewController.swift */,
+				7C4E965523B3A57D00C70EC9 /* ComicList(搜索结果或打开分类后显示的界面) */,
+				7C4E963F23B2778D00C70EC9 /* OtherWorks(详情其他作品) */,
+				7C28C71723AFD15200BF8CBE /* Detail(详情) */,
 			);
-			path = Comic;
+			path = "Comic(显示小说目录和简介)";
 			sourceTree = "<group>";
 		};
 		032165B3233A76B9005F015A /* Component */ = {
@@ -372,7 +395,7 @@
 			children = (
 				0370E7A12385A03500DD8B22 /* Home */,
 				03B8767D2380574800FF568B /* Cate */,
-				0314F2342367367C0013F36B /* Comic */,
+				0314F2342367367C0013F36B /* Comic(显示小说目录和简介) */,
 				03065A09235D7DF100FF59D1 /* Book */,
 				03065A08235D7CE100FF59D1 /* Search */,
 				03406BAC22FC366B007DDF0E /* AppDelegate.swift */,
@@ -450,7 +473,6 @@
 		03B8767A2380493800FF568B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				03B8767B2380498100FF568B /* UComicViewController.swift */,
 				039023DE2381A85400CCAADC /* UComicListViewController.swift */,
 			);
 			path = ViewController;
@@ -508,6 +530,51 @@
 			path = UpdateListViewController;
 			sourceTree = "<group>";
 		};
+		7C17A78523B3A8FE00198B9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C17A78923B3AB2500198B9E /* UChapterCHead.swift */,
+				7C17A78B23B3B17D00198B9E /* UChapterCCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7C17A78623B3A90500198B9E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7C17A78723B3A94000198B9E /* UChapterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7C28C71723AFD15200BF8CBE /* Detail(详情) */ = {
+			isa = PBXGroup;
+			children = (
+				7C28C71923AFD17100BF8CBE /* Controller */,
+				7C28C71823AFD16800BF8CBE /* VIew */,
+			);
+			path = "Detail(详情)";
+			sourceTree = "<group>";
+		};
+		7C28C71823AFD16800BF8CBE /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				7C28C71C23AFD35200BF8CBE /* UDescriptionTCell.swift */,
+				7C2201A923B1278B005FDDFA /* UOtherWorksTCell.swift */,
+				7C2201AB23B12E3E005FDDFA /* UTicketTCell.swift */,
+				7C2201AD23B13144005FDDFA /* UGuessLikeTCell.swift */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		7C28C71923AFD17100BF8CBE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7C28C71A23AFD19900BF8CBE /* UDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		7C4572E023AD3D8F00345CC8 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -522,6 +589,49 @@
 				7C4572E223AD3DBF00345CC8 /* UUpdateTCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7C4E963F23B2778D00C70EC9 /* OtherWorks(详情其他作品) */ = {
+			isa = PBXGroup;
+			children = (
+				7C4E964123B2779700C70EC9 /* Controller */,
+				7C4E964023B2779100C70EC9 /* View */,
+			);
+			path = "OtherWorks(详情其他作品)";
+			sourceTree = "<group>";
+		};
+		7C4E964023B2779100C70EC9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C4E964423B2FABB00C70EC9 /* UOtherWorksCCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7C4E964123B2779700C70EC9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7C4E964223B277BA00C70EC9 /* UOtherWorksViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7C4E965523B3A57D00C70EC9 /* ComicList(搜索结果或打开分类后显示的界面) */ = {
+			isa = PBXGroup;
+			children = (
+				03B876792380492400FF568B /* View */,
+				03B8767A2380493800FF568B /* ViewController */,
+			);
+			path = "ComicList(搜索结果或打开分类后显示的界面)";
+			sourceTree = "<group>";
+		};
+		7C4E965623B3A6DE00C70EC9 /* Chapter(章节) */ = {
+			isa = PBXGroup;
+			children = (
+				7C17A78623B3A90500198B9E /* Controller */,
+				7C17A78523B3A8FE00198B9E /* View */,
+			);
+			path = "Chapter(章节)";
 			sourceTree = "<group>";
 		};
 		7C9D08AC23A93D9600BB6C3A /* View */ = {
@@ -825,6 +935,7 @@
 				7C8B8ABD23A14E5700FFC7A5 /* UBoardCCell.swift in Sources */,
 				0370E7AB2385A2D700DD8B22 /* URankListViewController.swift in Sources */,
 				0314A97F23576A3200B1CF2D /* UAPI.swift in Sources */,
+				7C28C71D23AFD35200BF8CBE /* UDescriptionTCell.swift in Sources */,
 				031C0248230AB1F7000656EC /* UBaseCollectionViewCell.swift in Sources */,
 				031C024C230AB4F0000656EC /* UBaseCollectionReusableView.swift in Sources */,
 				7C1318FF23A6A214002360CE /* UUpdateListViewController.swift in Sources */,
@@ -847,18 +958,22 @@
 				030FA75723210276008DF4E7 /* UIBarButtonItemExtension.swift in Sources */,
 				031DE49B2322748A0058AABD /* DictionaryExtension.swift in Sources */,
 				03C0BD322359C3030097E69E /* UMineViewController.swift in Sources */,
+				7C2201AC23B12E3E005FDDFA /* UTicketTCell.swift in Sources */,
 				0310AC1922FD772F00965ECD /* UTabBarController.swift in Sources */,
+				7C2201AA23B1278B005FDDFA /* UOtherWorksTCell.swift in Sources */,
 				03EC4C20232FA02400D8B7B4 /* UWebViewController.swift in Sources */,
 				032E19FF23482EA7006F5573 /* ParallaxHeaderMode.swift in Sources */,
 				031C024A230AB2A4000656EC /* UBaseTableViewCell.swift in Sources */,
 				031DE495232267960058AABD /* UIDeviceExtension.swift in Sources */,
 				039F0774232552C6006A13AB /* UIViewExtension.swift in Sources */,
 				0350F7BF2344FFDC00126CCD /* UEmptyDataSet.swift in Sources */,
+				7C4E964523B2FABB00C70EC9 /* UOtherWorksCCell.swift in Sources */,
 				0307FE652358CD6400EA5D90 /* USettingViewController.swift in Sources */,
 				0348346A232AA537003F7563 /* ConstraintArrayDSL.swift in Sources */,
 				0370E7A32385A0D400DD8B22 /* UHomeViewController.swift in Sources */,
 				03130397235F5E28005E7183 /* USearchViewController.swift in Sources */,
 				031DE497232274280058AABD /* UIImageExtensions.swift in Sources */,
+				7C17A78A23B3AB2500198B9E /* UChapterCHead.swift in Sources */,
 				7C1318FC23A69FA3002360CE /* USpecialViewController.swift in Sources */,
 				7CC8BBFF2395197B003A061F /* URankTCell.swift in Sources */,
 				0307FE632358CAAA00EA5D90 /* UMineHead.swift in Sources */,
@@ -866,7 +981,12 @@
 				0349947C23487A33004F3395 /* UNoticeBar.swift in Sources */,
 				039023DF2381A85400CCAADC /* UComicListViewController.swift in Sources */,
 				031A291E23192DA40085D3D7 /* UNavigationController.swift in Sources */,
+				7C28C71B23AFD19900BF8CBE /* UDetailViewController.swift in Sources */,
+				7C4E964323B277BA00C70EC9 /* UOtherWorksViewController.swift in Sources */,
+				7C17A78C23B3B17D00198B9E /* UChapterCCell.swift in Sources */,
+				7C17A78823B3A94000198B9E /* UChapterViewController.swift in Sources */,
 				03065A0E235D7E2E00FF59D1 /* UBookViewController.swift in Sources */,
+				7C2201AE23B13144005FDDFA /* UGuessLikeTCell.swift in Sources */,
 				031DE4992322744A0058AABD /* ArrayExtensions.swift in Sources */,
 				0314F236236736B60013F36B /* UComicHead.swift in Sources */,
 				03130394235F07E3005E7183 /* USearchTFoot.swift in Sources */,

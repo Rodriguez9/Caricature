@@ -22,7 +22,7 @@ class UComicViewController: UBaseViewController {
         return sw
     }()
     
-   // private lazy var detailVC:
+    //private lazy var detailVC:
     
     convenience init(comicid: Int){
         self.init()

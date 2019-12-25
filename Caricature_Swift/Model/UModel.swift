@@ -85,6 +85,7 @@ struct ChapterStaticModel: HandyJSON {
     var countImHightArr: Int = 0
 }
 
+/**小说详情中的其他作品*/
 struct OtherWorkModel: HandyJSON {
     var comicId: Int = 0
     var coverUrl: String?
@@ -92,12 +93,14 @@ struct OtherWorkModel: HandyJSON {
     var passChapterNum: Int = 0
 }
 
+/**小说详情的静态数据：比如章节，名称*/
 struct DetailStaticModel: HandyJSON {
     var comic: ComicStaticModel?
     var chapter_list: [ChapterStaticModel]?
     var otherWorks: [OtherWorkModel]?
 }
 
+/**实时数据：点击，收藏*/
 struct ComicRealtimeModel: HandyJSON {
     var comic_id: Int = 0
     var user_id: Int = 0
@@ -116,6 +119,7 @@ struct ComicRealtimeModel: HandyJSON {
     var is_auto_buy: Bool = false
 }
 
+/**小说章节的实时数据*/
 struct ChapterRealtimeModel: HandyJSON {
     var vip_images: Int = 0
     var is_view: Bool = false
@@ -126,11 +130,13 @@ struct ChapterRealtimeModel: HandyJSON {
     var is_free: Bool = false
 }
 
+/**小说详情的动态态数据：比如更新*/
 struct DetailRealtimeModel: HandyJSON {
     var comic: ComicRealtimeModel?
     var chapter_list: [ChapterRealtimeModel]?
 }
 
+/**猜测喜欢数据*/
 struct GuessLikeModel: HandyJSON {
     var normal: Bool = false
     var last_modified: Int = 0
@@ -221,6 +227,7 @@ struct HotItemsModel: HandyJSON {
     var defaultSearch: String?
 }
 
+/**访问类型Url还是ComicId*/
 struct ExtModel: HandyJSON {
     var key: String?
     var val: String?
@@ -270,6 +277,7 @@ struct ComicModel: HandyJSON {
     var ext: [ExtModel]?
 }
 
+//漫画类型
 enum UComicType: Int, HandyJSONEnum {
     case none = 0
     case update = 3
@@ -340,9 +348,11 @@ struct BoutiqueListModel: HandyJSON {
     var editTime: TimeInterval = 0
 }
 
+
 struct VipListModel: HandyJSON {
     var newVipList: [ComicListModel]?
 }
+
 /**订阅信息*/
 struct SubscribeListModel: HandyJSON {
     var newSubscribeList: [ComicListModel]?
