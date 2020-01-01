@@ -13,7 +13,7 @@ class UChapterViewController: UBaseViewController {
     private var isPositive: Bool = true
     
     var detailStatic: DetailStaticModel?
-    var detailRealtiome: DetailRealtimeModel?
+    var detailRealtime: DetailRealtimeModel?
     
     weak var delegate: UComicViewWillEndDraggingDelegate?
     
@@ -60,7 +60,12 @@ extension UChapterViewController:UICollectionViewDelegateFlowLayout,UICollection
         return detailStatic?.chapter_list?.count ?? 0
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    //单元格的大小
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        return CGSize(width: floor((screenWidth - 30)/2), height: 40)
+//    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return CGSize(width: screenWidth, height: 44)
     }
     
@@ -82,9 +87,11 @@ extension UChapterViewController:UICollectionViewDelegateFlowLayout,UICollection
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(for: indexPath, cellType: UChapterCCell.self)
+        //判断顺序
         if isPositive {
             cell.chapterStatic = detailStatic?.chapter_list?[indexPath.row]
         }else {
+            //.reversed翻转
             cell.chapterStatic = detailStatic?.chapter_list?.reversed()[indexPath.row]
         }
         return cell

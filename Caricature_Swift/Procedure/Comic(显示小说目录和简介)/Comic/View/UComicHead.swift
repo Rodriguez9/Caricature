@@ -86,7 +86,7 @@ class UComicHead: UIView{
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+        config()
     }
     
     required init?(coder aDecoder: NSCoder) {

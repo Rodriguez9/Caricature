@@ -84,6 +84,10 @@
 		7C9D08AF23A93DCD00BB6C3A /* USpecialTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D08AE23A93DCD00BB6C3A /* USpecialTCell.swift */; };
 		7CA2373023966BAE00BFAFAE /* UComicCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA2372F23966BAD00BFAFAE /* UComicCCell.swift */; };
 		7CC8BBFF2395197B003A061F /* URankTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8BBFE2395197B003A061F /* URankTCell.swift */; };
+		7CD8744723B65F5C00C0D06D /* UReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD8744623B65F5C00C0D06D /* UReadViewController.swift */; };
+		7CD8744A23B660BE00C0D06D /* UCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD8744923B660BE00C0D06D /* UCommentViewController.swift */; };
+		7CD8744E23B6610500C0D06D /* UCommentTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD8744D23B6610500C0D06D /* UCommentTCell.swift */; };
+		7CD8745123B6649300C0D06D /* UCommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD8745023B6649300C0D06D /* UCommentViewModel.swift */; };
 		841349EBD9F1FFE8AF3DED01 /* Pods_Caricature_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4ECF4444F8B618D9AEB3672 /* Pods_Caricature_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -168,6 +172,10 @@
 		7C9D08AE23A93DCD00BB6C3A /* USpecialTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USpecialTCell.swift; sourceTree = "<group>"; };
 		7CA2372F23966BAD00BFAFAE /* UComicCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UComicCCell.swift; sourceTree = "<group>"; };
 		7CC8BBFE2395197B003A061F /* URankTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URankTCell.swift; sourceTree = "<group>"; };
+		7CD8744623B65F5C00C0D06D /* UReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UReadViewController.swift; sourceTree = "<group>"; };
+		7CD8744923B660BE00C0D06D /* UCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCommentViewController.swift; sourceTree = "<group>"; };
+		7CD8744D23B6610500C0D06D /* UCommentTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCommentTCell.swift; sourceTree = "<group>"; };
+		7CD8745023B6649300C0D06D /* UCommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCommentViewModel.swift; sourceTree = "<group>"; };
 		85CF236D36DAE7814D71F8A6 /* Pods-Caricature_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Caricature_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Caricature_Swift/Pods-Caricature_Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		F4ECF4444F8B618D9AEB3672 /* Pods_Caricature_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Caricature_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -306,8 +314,10 @@
 		0314F2342367367C0013F36B /* Comic(显示小说目录和简介) */ = {
 			isa = PBXGroup;
 			children = (
+				7CD4F50323B8C3C200724275 /* Comic */,
+				7CD8744823B660A400C0D06D /* Comment */,
+				7CD8744523B65F4000C0D06D /* ReadView */,
 				7C4E965623B3A6DE00C70EC9 /* Chapter(章节) */,
-				03B8767B2380498100FF568B /* UComicViewController.swift */,
 				7C4E965523B3A57D00C70EC9 /* ComicList(搜索结果或打开分类后显示的界面) */,
 				7C4E963F23B2778D00C70EC9 /* OtherWorks(详情其他作品) */,
 				7C28C71723AFD15200BF8CBE /* Detail(详情) */,
@@ -464,7 +474,6 @@
 		03B876792380492400FF568B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0314F235236736B60013F36B /* UComicHead.swift */,
 				0314F2372367457F0013F36B /* UComicTCell.swift */,
 			);
 			path = View;
@@ -775,6 +784,73 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		7CD4F50323B8C3C200724275 /* Comic */ = {
+			isa = PBXGroup;
+			children = (
+				7CD4F50423B8C3D800724275 /* View */,
+				7CD4F50523B8C3E400724275 /* Controller */,
+			);
+			path = Comic;
+			sourceTree = "<group>";
+		};
+		7CD4F50423B8C3D800724275 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0314F235236736B60013F36B /* UComicHead.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7CD4F50523B8C3E400724275 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				03B8767B2380498100FF568B /* UComicViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7CD8744523B65F4000C0D06D /* ReadView */ = {
+			isa = PBXGroup;
+			children = (
+				7CD8744623B65F5C00C0D06D /* UReadViewController.swift */,
+			);
+			path = ReadView;
+			sourceTree = "<group>";
+		};
+		7CD8744823B660A400C0D06D /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				7CD8744F23B6648000C0D06D /* Model */,
+				7CD8744C23B660DF00C0D06D /* View */,
+				7CD8744B23B660D500C0D06D /* Controller */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		7CD8744B23B660D500C0D06D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7CD8744923B660BE00C0D06D /* UCommentViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7CD8744C23B660DF00C0D06D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7CD8744D23B6610500C0D06D /* UCommentTCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7CD8744F23B6648000C0D06D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7CD8745023B6649300C0D06D /* UCommentViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DE16BAF11461EF16F74D6908 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -925,6 +1001,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0370E7A92385A2BB00DD8B22 /* USubscibeListViewController.swift in Sources */,
+				7CD8744723B65F5C00C0D06D /* UReadViewController.swift in Sources */,
 				0354E4BA235369990081F966 /* UCollectionViewSectionBackgroundLayout.swift in Sources */,
 				03406BAF22FC366B007DDF0E /* ViewController.swift in Sources */,
 				032E1A0123482F10006F5573 /* ParallaxHeader.swift in Sources */,
@@ -933,12 +1010,14 @@
 				03B8768123805B3600FF568B /* UTopCCell.swift in Sources */,
 				032165B6233A76FA005F015A /* UHairPowder.swift in Sources */,
 				7C8B8ABD23A14E5700FFC7A5 /* UBoardCCell.swift in Sources */,
+				7CD8744A23B660BE00C0D06D /* UCommentViewController.swift in Sources */,
 				0370E7AB2385A2D700DD8B22 /* URankListViewController.swift in Sources */,
 				0314A97F23576A3200B1CF2D /* UAPI.swift in Sources */,
 				7C28C71D23AFD35200BF8CBE /* UDescriptionTCell.swift in Sources */,
 				031C0248230AB1F7000656EC /* UBaseCollectionViewCell.swift in Sources */,
 				031C024C230AB4F0000656EC /* UBaseCollectionReusableView.swift in Sources */,
 				7C1318FF23A6A214002360CE /* UUpdateListViewController.swift in Sources */,
+				7CD8744E23B6610500C0D06D /* UCommentTCell.swift in Sources */,
 				03406BAD22FC366B007DDF0E /* AppDelegate.swift in Sources */,
 				039A25F7230BFCFB001AA408 /* UBaseViewController.swift in Sources */,
 				031355262302C09D00E830DE /* UBaseTableViewHeaderFooterView.swift in Sources */,
@@ -961,6 +1040,7 @@
 				7C2201AC23B12E3E005FDDFA /* UTicketTCell.swift in Sources */,
 				0310AC1922FD772F00965ECD /* UTabBarController.swift in Sources */,
 				7C2201AA23B1278B005FDDFA /* UOtherWorksTCell.swift in Sources */,
+				7CD8745123B6649300C0D06D /* UCommentViewModel.swift in Sources */,
 				03EC4C20232FA02400D8B7B4 /* UWebViewController.swift in Sources */,
 				032E19FF23482EA7006F5573 /* ParallaxHeaderMode.swift in Sources */,
 				031C024A230AB2A4000656EC /* UBaseTableViewCell.swift in Sources */,
@@ -1153,8 +1233,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tfbj.xudb;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Caricature_Swift;
 				PROVISIONING_PROFILE_SPECIFIER = cesi;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1176,8 +1257,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tfbj.xudb;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Caricature_Swift;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

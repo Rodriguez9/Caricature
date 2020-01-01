@@ -43,6 +43,7 @@ class UDescriptionTCell: UBaseTableViewCell {
         }
     }
     
+    //返回该textView所需要的高度
     class func height(for detailStatic: DetailStaticModel?)->CGFloat {
         var height: CGFloat = 55.0
         guard let model = detailStatic else { return height }

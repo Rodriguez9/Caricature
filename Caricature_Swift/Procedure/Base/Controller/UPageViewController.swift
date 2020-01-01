@@ -21,6 +21,7 @@ class UPageViewController: UBaseViewController {
     
     //HMSegmentedControl：分栏控制器
     //then:来源于第三方框架Then，改进写法
+    //上面的那几个标题名
     lazy var segment: HMSegmentedControl = {
         return HMSegmentedControl().then{
             $0.addTarget(self, action: #selector(changeIndex(segment:)),for: .valueChanged)

@@ -14,7 +14,12 @@ typealias UGuessLikeTCellDidSelectClosure = (_ comic: ComicModel) -> Void
 class UGuessLikeTCell: UBaseTableViewCell {
 
     private var didSelectClosure: UGuessLikeTCellDidSelectClosure?
-
+    
+    //set
+    func didSelectClosure(_ closure: UGuessLikeTCellDidSelectClosure?){
+        didSelectClosure = closure
+    }
+    
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 0, right: 10)
@@ -78,12 +83,8 @@ extension UGuessLikeTCell:UICollectionViewDelegateFlowLayout,UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let comic = model?.comics?[indexPath.row],
             let didSelectClosure = didSelectClosure else { return }
+        //先执行
         didSelectClosure(comic)
-    }
-    
-    //set
-    func didSelectClosure(_ closure: UGuessLikeTCellDidSelectClosure?){
-        didSelectClosure = closure
     }
     
 }

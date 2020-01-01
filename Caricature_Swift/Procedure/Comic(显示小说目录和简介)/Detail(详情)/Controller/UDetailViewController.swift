@@ -16,7 +16,7 @@ class UDetailViewController: UBaseViewController {
     var detailStatic: DetailStaticModel?
     /**详情动态数据*/
     var detailRealtime: DetailRealtimeModel?
-    
+    /**猜你喜欢的数据*/
     var guessLike : GuessLikeModel?
     
     private lazy var tableView: UITableView = {
@@ -101,7 +101,9 @@ extension UDetailViewController: UITableViewDelegate,UITableViewDataSource{
         }else{
             let cell = tableView.dequeueReusableCell(for: indexPath, cellType: UGuessLikeTCell.self)
             cell.model = guessLike
+            //先赋于一个带comic参数的闭包给UGuessLikeTCell的didSelectClosure
             cell.didSelectClosure { [weak self] (comic) in
+                //后执行
                 let vc = UComicViewController(comicid: comic.comic_id)
                 self?.navigationController?.pushViewController(vc, animated: true)
             }
@@ -110,8 +112,10 @@ extension UDetailViewController: UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = UOtherWorksViewController(otherWorks: detailStatic?.otherWorks)
-        navigationController?.pushViewController(vc, animated: true)
+        if indexPath.section == 1 {
+            let vc = UOtherWorksViewController(otherWorks: detailStatic?.otherWorks)
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {

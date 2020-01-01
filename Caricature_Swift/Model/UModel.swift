@@ -154,7 +154,7 @@ struct LevelModel: HandyJSON {
     var wage: Int = 0
 }
 
-/**订阅清单*/
+/**评论信息*/
 struct CommentModel: HandyJSON {
     var cate: Int = 0
     var color: String?
@@ -195,6 +195,7 @@ struct CommentModel: HandyJSON {
     var vip_exp: Int = 0
 }
 
+/**评论列表*/
 struct CommentListModel: HandyJSON {
     var commentCount: Int = 0
     var commentList: [CommentModel]?
