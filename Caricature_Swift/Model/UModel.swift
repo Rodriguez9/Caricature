@@ -19,7 +19,7 @@ struct ImageModel: HandyJSON {
     var img05: String?
     var img50: String?
 }
-
+/**该章节的图片*/
 struct ChapterModel: HandyJSON {
     var status: Int = 0
     var chapter_id: Int = 0
@@ -68,7 +68,7 @@ struct ImHightModel: HandyJSON {
     var height: Int = 0
     var width: Int = 0
 }
-
+/**章节静态数据*/
 struct ChapterStaticModel: HandyJSON {
     var chapter_id: Int = 0
     var name: String?

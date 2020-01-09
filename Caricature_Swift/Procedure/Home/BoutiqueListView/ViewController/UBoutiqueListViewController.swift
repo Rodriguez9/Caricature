@@ -28,7 +28,7 @@ class UBoutiqueListViewController: UBaseViewController {
         bw.pageControlPosition = .right
         bw.pageControlBottom = 20
         bw.titleBackgroundColor = UIColor.clear
-        //回調
+        //回調，点击bannerView的回调事件
         bw.lldidSelectItemAtIndex = didSelectBanner(index:)
         return bw
     }()

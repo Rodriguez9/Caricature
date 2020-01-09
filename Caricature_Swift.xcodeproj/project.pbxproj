@@ -78,8 +78,11 @@
 		7C4572E323AD3DBF00345CC8 /* UUpdateTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4572E223AD3DBF00345CC8 /* UUpdateTCell.swift */; };
 		7C4E964323B277BA00C70EC9 /* UOtherWorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4E964223B277BA00C70EC9 /* UOtherWorksViewController.swift */; };
 		7C4E964523B2FABB00C70EC9 /* UOtherWorksCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4E964423B2FABB00C70EC9 /* UOtherWorksCCell.swift */; };
+		7C68EB4D23BCF81200BA167A /* UReadCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C68EB4C23BCF81200BA167A /* UReadCCell.swift */; };
 		7C694D2F2396C17A0060087B /* UComicCHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C694D2E2396C17A0060087B /* UComicCHead.swift */; };
 		7C694D312396C7650060087B /* UComicCFoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C694D302396C7650060087B /* UComicCFoot.swift */; };
+		7C6C890D23BF8BC800848EE5 /* UReadTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C890C23BF8BC800848EE5 /* UReadTopBar.swift */; };
+		7C6C890F23BF967000848EE5 /* UReadBottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C890E23BF967000848EE5 /* UReadBottomBar.swift */; };
 		7C8B8ABD23A14E5700FFC7A5 /* UBoardCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B8ABC23A14E5700FFC7A5 /* UBoardCCell.swift */; };
 		7C9D08AF23A93DCD00BB6C3A /* USpecialTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D08AE23A93DCD00BB6C3A /* USpecialTCell.swift */; };
 		7CA2373023966BAE00BFAFAE /* UComicCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA2372F23966BAD00BFAFAE /* UComicCCell.swift */; };
@@ -166,8 +169,11 @@
 		7C4572E223AD3DBF00345CC8 /* UUpdateTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUpdateTCell.swift; sourceTree = "<group>"; };
 		7C4E964223B277BA00C70EC9 /* UOtherWorksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UOtherWorksViewController.swift; sourceTree = "<group>"; };
 		7C4E964423B2FABB00C70EC9 /* UOtherWorksCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UOtherWorksCCell.swift; sourceTree = "<group>"; };
+		7C68EB4C23BCF81200BA167A /* UReadCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UReadCCell.swift; sourceTree = "<group>"; };
 		7C694D2E2396C17A0060087B /* UComicCHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UComicCHead.swift; sourceTree = "<group>"; };
 		7C694D302396C7650060087B /* UComicCFoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UComicCFoot.swift; sourceTree = "<group>"; };
+		7C6C890C23BF8BC800848EE5 /* UReadTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UReadTopBar.swift; sourceTree = "<group>"; };
+		7C6C890E23BF967000848EE5 /* UReadBottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UReadBottomBar.swift; sourceTree = "<group>"; };
 		7C8B8ABC23A14E5700FFC7A5 /* UBoardCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBoardCCell.swift; sourceTree = "<group>"; };
 		7C9D08AE23A93DCD00BB6C3A /* USpecialTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USpecialTCell.swift; sourceTree = "<group>"; };
 		7CA2372F23966BAD00BFAFAE /* UComicCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UComicCCell.swift; sourceTree = "<group>"; };
@@ -643,6 +649,24 @@
 			path = "Chapter(章节)";
 			sourceTree = "<group>";
 		};
+		7C68EB4A23BCF7DF00BA167A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C68EB4C23BCF81200BA167A /* UReadCCell.swift */,
+				7C6C890C23BF8BC800848EE5 /* UReadTopBar.swift */,
+				7C6C890E23BF967000848EE5 /* UReadBottomBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7C68EB4B23BCF7EA00BA167A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7CD8744623B65F5C00C0D06D /* UReadViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		7C9D08AC23A93D9600BB6C3A /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -812,7 +836,8 @@
 		7CD8744523B65F4000C0D06D /* ReadView */ = {
 			isa = PBXGroup;
 			children = (
-				7CD8744623B65F5C00C0D06D /* UReadViewController.swift */,
+				7C68EB4B23BCF7EA00BA167A /* Controller */,
+				7C68EB4A23BCF7DF00BA167A /* View */,
 			);
 			path = ReadView;
 			sourceTree = "<group>";
@@ -1026,6 +1051,7 @@
 				03406BC022FC4700007DDF0E /* Global.swift in Sources */,
 				039A25FA230C003F001AA408 /* UIColorExtension.swift in Sources */,
 				0314A97C2357630D00B1CF2D /* UModel.swift in Sources */,
+				7C68EB4D23BCF81200BA167A /* UReadCCell.swift in Sources */,
 				0314F2382367457F0013F36B /* UComicTCell.swift in Sources */,
 				03065A15235D7E9A00FF59D1 /* USearchTHead.swift in Sources */,
 				0370E7A52385A27900DD8B22 /* UBoutiqueListViewController.swift in Sources */,
@@ -1036,6 +1062,7 @@
 				03B8767C2380498100FF568B /* UComicViewController.swift in Sources */,
 				030FA75723210276008DF4E7 /* UIBarButtonItemExtension.swift in Sources */,
 				031DE49B2322748A0058AABD /* DictionaryExtension.swift in Sources */,
+				7C6C890D23BF8BC800848EE5 /* UReadTopBar.swift in Sources */,
 				03C0BD322359C3030097E69E /* UMineViewController.swift in Sources */,
 				7C2201AC23B12E3E005FDDFA /* UTicketTCell.swift in Sources */,
 				0310AC1922FD772F00965ECD /* UTabBarController.swift in Sources */,
@@ -1045,6 +1072,7 @@
 				032E19FF23482EA7006F5573 /* ParallaxHeaderMode.swift in Sources */,
 				031C024A230AB2A4000656EC /* UBaseTableViewCell.swift in Sources */,
 				031DE495232267960058AABD /* UIDeviceExtension.swift in Sources */,
+				7C6C890F23BF967000848EE5 /* UReadBottomBar.swift in Sources */,
 				039F0774232552C6006A13AB /* UIViewExtension.swift in Sources */,
 				0350F7BF2344FFDC00126CCD /* UEmptyDataSet.swift in Sources */,
 				7C4E964523B2FABB00C70EC9 /* UOtherWorksCCell.swift in Sources */,

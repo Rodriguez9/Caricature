@@ -100,6 +100,7 @@ extension UApi: TargetType{
             parameters["q"] = q
         case .boutiqueList(let sexType):
             parameters["sexType"] = sexType
+            parameters["v"] = 3320101
         case .special(let argCon, let page):
             parameters["argCon"] = argCon
             parameters["page"] = max(1, page)

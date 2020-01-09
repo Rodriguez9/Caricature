@@ -100,9 +100,7 @@ extension UChapterViewController:UICollectionViewDelegateFlowLayout,UICollection
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let index = isPositive ? indexPath.row : ((detailStatic?.chapter_list?.count)! - indexPath.row - 1)
          let vc = UReadViewController(detailStatic: detailStatic, selectIndex: index)
-               navigationController?.pushViewController(vc, animated: true)
-        
+        navigationController?.pushViewController(vc, animated: true)
     }
-    
-    
+
 }
